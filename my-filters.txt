@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Vishal's personal uBO filter list
-! Last modified: Fri Dec 16 22:29:52 2022 + UTC
+! Last modified: Fri Dec 16 22:32:38 2022 + UTC
 ! Expires: 7 days (update frequency)
 !
 ! Please report any unblocked adverts or problems via GitHub issues or via e-mail (ubo-filters@vishalnandagopal.com).
@@ -2554,6 +2554,7 @@ www.youtube.com###contentWrapper > .ytd-popup-container.style-scope:has(:has-tex
 ! 2022-07-27 https://nypost.com
 nypost.com##.layout__item--sidebar.layout__item
 nypost.com##.site-footer
+
 
 
 ! ----------------------------- FILTER LIST ENDS -----------------------------
