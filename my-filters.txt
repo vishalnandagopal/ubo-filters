@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
 ! Title: Vishal's personal uBO filter list
-! Last modified: Fri Dec 16 22:32:38 2022 + UTC
+! Last modified: Fri Dec 16 23:36:03 2022 + UTC
 ! Expires: 7 days (update frequency)
 !
-! Please report any unblocked adverts or problems via GitHub issues or via e-mail (ubo-filters@vishalnandagopal.com).
+! Please report only issues or problems specifically with this filter list via GitHub issues or via e-mail (ubo-filters@vishalnandagopal.com). If you see ads not being blocked, report it on EasyList forums - https://forums.lanik.us/ .
 !
 ! Homepage: https://github.com/vishalnandagopal/ubo-filters
 ! Licence: https://github.com/vishalnandagopal/ubo-filters/blob/main/LICENSE
