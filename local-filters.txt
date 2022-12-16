@@ -1,0 +1,2540 @@
+!	FOR WEBSITES BLOCKING SCROLL BAR      example.com##body,html:style(overflow: auto !important;)
+
+!	EXAMPLE BLOCKING					  @@||www.redditstatic.com^$script,domain=reddit.com
+
+!	HAS THESE CHARACTERS
+!   :has(:has-text(//i))
+!										  EXAMPLE- ww.youtube.com###content > .ytd-rich-section-renderer.style-scope:has(:has-text(/featured/i))
+!https://windscribe.com/?friend=eur5pqs8
+
+! google.*##.g:has(a[href*=".pinterest."])
+! google.*##a[href*=".pinterest."]:nth-ancestor(1)
+
+! And so it should be. There's hardly anything worse than having things shift around after you start reading, scrolling or clicking on something. (https://news.ycombinator.com/item?id=27404518)
+! google.com##div[id^="eob_"]
+
+!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+!	LINK SHORTENERS
+img-cdn.tnwcdn.com$all
+hackerone.com/redirect?$all
+adjust.com$all
+youtube.com/redirect$all
+georiot.com$all
+amazon.*/gp/slredirect$all
+https://www.amazon.in/gp/video$all
+twitter.com/intent/$all
+r.search.yahoo.com/$all
+gadgets.techlomedia.in/algo/redirect/redirect.php?url$all
+windowscentral.com/e?link$all
+l.instagram.com/?u$all
+bestbuy.7tiv.net$all
+adorama.rfvk.net/c$all
+google.com/url$all
+out.reddit.com$all
+google.com/amp$all
+tradedoubler.com$all
+cloudwards.net/goto/$all
+linkedin.com/redir$all
+getpocket.com/redirect$all
+t.umblr.com/redirect$all
+gate.sc/?url$all
+cdn.embedly.com/$all
+oldreddit.com$all
+facebook.com$all
+fb.com$all
+facebook.net$all
+meta.com$all
+l.messenger.com$all
+coinbase.com/external_redirect?$all
+teddit.com$all
+scroll.com$all
+c212.net$all
+sympna.com$all
+cts.businesswire.com/ct/CT?id=smartlink$all
+awstrack.me$all
+pinterest.com/offsite/$all
+pinterest.co.in/offsite/$all
+
+! purely redirect domains
+onenag.com$all
+purewin.com$all
+rajabets.com$all
+sluxur.com$all
+sendgrid.net$all
+
+!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+!source - https://news.ycombinator.com/item?id=23197966
+!ycombinator.com##html:style(background-color: #3e3e42 !important)
+!ycombinator.com###hnmain:style(background-color: #2E2E31 !important)
+!ycombinator.com##.age:style(color: #bbb !important)
+!ycombinator.com##.c00:style(color: #bbb !important)
+!ycombinator.com##.comhead > a:style(color: #dedede !important)
+!ycombinator.com##.comhead:style(color: #dedede !important)
+!ycombinator.com##.hnuser:style(color: #bbb !important)
+!ycombinator.com##.subtext > a:link:style(color: #bbb !important)
+!ycombinator.com##.subtext > a:style(color: #bbb !important)
+!ycombinator.com##.subtext:style(color: #bbb !important)
+!ycombinator.com##.title > a:style(color: #dedede !important)
+!ycombinator.com##a:link:style(color: #bbb !important)
+
+! Hide karma and points on HN 2020-09-12 https://news.ycombinator.com
+news.ycombinator.com##form:nth-of-type(2)
+news.ycombinator.com##[href="forgot"]
+news.ycombinator.com##b:nth-of-type(2)
+ycombinator.com##.commtext:style(font-size: 10.8pt !important)
+ycombinator.com##.toptext>p:style(font-size: 12pt !important)
+ycombinator.com##.toptext:style(font-size: 12pt !important)
+ycombinator.com##.titleline:style(font-size: 12pt !important)
+
+!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+!	CUSTOM BLOCKS
+youtube.com###content > .ytd-rich-section-renderer.style-scope:has(:has-text(/featured/i))
+||id.google.com^
+||smartlock.google.com^
+||accounts.google.com/gsi/$3p
+
+!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+!	BLOCK GOOGLE CHANGING LINKS ON CLICKING A SEARCH RESULT 
+google.*##+js(set, rwt, noopFunc)
+
+!Example - https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiezN2u_bjrAhUOA3IKHYx9Bu4QFjAAegQIExAB&url=https%3A%2F%2Fwww.amazon.in%2F&usg=AOvVaw11iWiBdQ4J9QF64so00kjl
+!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+!	FUCK MS
+go.microsoft.com/fwlink/?LinkId=528882$all
+go.microsoft.com/fwlink/?LinkId=528884$all
+!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+! useless stuff when deleting tweets 2022-06-30 https://twitter.com
+!twitter.com##.r-6416eg.r-o7ynqc.r-m2pi6t.r-1ny4l3l.r-19u6a5r.r-16y2uox.r-1loqt21.css-1dbjc4n.css-18t94o4.css-4rbku5
+!twitter.com##.r-6416eg.r-o7ynqc.r-1vvnge1.r-ymttw5.r-1udh08x.r-1ny4l3l.r-t2kpel.r-1loqt21.css-1dbjc4n.css-18t94o4.css-4rbku5
+!twitter.com##.r-13qz1uu.r-1ye8kvj.r-1jgb5lz.css-1dbjc4n > section.css-1dbjc4n > .css-1dbjc4n .r-1ny4l3l.r-1adg3ll.css-1dbjc4n > .css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1yzf0co.r-ymttw5.r-1ny4l3l.r-1loqt21.css-1dbjc4n.css-18t94o4.css-4rbku5
+!twitter.com##div:nth-of-type(14) > .r-1ny4l3l.r-1adg3ll.css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n
+!twitter.com##div:nth-of-type(13) > .r-1ny4l3l.r-1adg3ll.css-1dbjc4n > .css-1dbjc4n > .r-1f1sjgu.r-ymttw5.r-1ny4l3l.r-1wtj0ep.css-1dbjc4n
+!twitter.com##div:nth-of-type(5) > .r-1ny4l3l.r-1adg3ll.css-1dbjc4n > .css-1dbjc4n
+!twitter.com##.r-1ny4l3l.r-1adg3ll.css-1dbjc4n > .css-1dbjc4n > .r-6416eg.r-o7ynqc.r-1f1sjgu.r-ymttw5.r-1ny4l3l.css-1dbjc4n.css-18t94o4
+!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+! 4/19/2020 https://timesofindia.indiatimes.com
+timesofindia.indiatimes.com##.top-area
+timesofindia.indiatimes.com##.new_footer
+timesofindia.indiatimes.com###etimesfooter
+timesofindia.indiatimes.com###toi-footer
+timesofindia.indiatimes.com##.col_box2
+timesofindia.indiatimes.com##.clearfix.ent_header
+timesofindia.indiatimes.com##.clearfix.toi-widgets
+timesofindia.indiatimes.com###ournetwork
+timesofindia.indiatimes.com##.ipadmt.paisa1
+timesofindia.indiatimes.com##.sidebar2
+timesofindia.indiatimes.com##.consent-popup
+timesofindia.indiatimes.com##._1RE3C > .small_outer_wrapper
+timesofindia.indiatimes.com##.flR.clearfix.jVodContainer.video_parent
+timesofindia.indiatimes.com##.flR.clearfix.vid_heading
+timesofindia.indiatimes.com##.opensticky.next_article_open
+timesofindia.indiatimes.com##.clearfix.featuredend_items.videos_photos_md
+timesofindia.indiatimes.com##.tenpx.stickybottom.add-free-nudge
+timesofindia.indiatimes.com##.clearfix.two-column-layout1 > .column2
+timesofindia.indiatimes.com##div.red.rpos.clearfix.fullwidth.widget:nth-of-type(8)
+photogallery.indiatimes.com##body > header
+photogallery.indiatimes.com##.fixblock
+photogallery.indiatimes.com##.newshare
+economictimes.indiatimes.com##.clearfix.band
+economictimes.indiatimes.com##header
+economictimes.indiatimes.com###topNavFixed
+economictimes.indiatimes.com##.logo_bottom
+economictimes.indiatimes.com##.newfooter
+economictimes.indiatimes.com##.bottomBar
+timesofindia.indiatimes.com/defaultinterstitial.cms$all
+m.timesofindia.com###sidebar
+m.timesofindia.com##.top_openapp
+m.timesofindia.com##.downloadapp
+m.timesofindia.com##.newfooter
+
+!www.livescience.com
+livescience.com##+js(aopr, _sp_._networkListenerData)
+
+! 4/19/2020 https://www.forbes.com
+www.forbes.com##.pop-picks--pop-active
+www.forbes.com##.header
+www.forbes.com###eu-consent
+
+! 4/19/2020 https://www.theguardian.com
+www.theguardian.com##.hide-until-mobile
+www.theguardian.com##.u-cf.l-footer
+www.theguardian.com##.content-footer--pillar-news.content-footer
+
+! 4/24/2020 https://www.independent.co.uk
+independent.co.uk##.hero-wrapper
+independent.co.uk##.sidebar
+independent.co.uk##.item-count-5.align-left.inline-related.inline-block
+independent.co.uk###footer
+independent.co.uk##.related-video.item-count-4.align-left.inline-related.inline-block
+independent.co.uk###masthead
+independent.co.uk###jw-hero-P0rmS5ZP-1595685907927
+
+! 4/24/2020 https://www.thedailybeast.com
+www.thedailybeast.com##.Footer--adhesion.Footer
+www.thedailybeast.com##.CheatSheetPage__left-column
+www.thedailybeast.com##.Sidebar
+www.thedailybeast.com##.Navigation
+www.thedailybeast.com##.StandardHeader__rubric.Rubric--withDivider.Rubric--tilted.Rubric--inStandardHeader.Rubric
+
+! 4/24/2020 https://www.nydailynews.com
+www.nydailynews.com##.clln--it.nws-cnt.crd
+www.nydailynews.com##.sticky-leaderboard.relative.ad-320x50.pb-ad-prod.pb-ad
+www.nydailynews.com###app-bar-sticky
+www.nydailynews.com###f0pJ0v44CfdfYr
+www.nydailynews.com###right-rail
+www.nydailynews.com##.artcl--r-sp
+
+! 4/24/2020 https://thehill.com
+thehill.com##.region-column-left.region
+thehill.com##.page-bottom
+thehill.com###header
+thehill.com##.sidebar
+thehill.com##.left-sidebar
+
+!5/5/2020 https://www.republicworld.com/
+||jarvis.republicworld.com^$1p
+
+! 4/24/2020 https://www.washingtonpost.com
+www.washingtonpost.com##.w-100.fixed.justify-center.items-center.hide-for-print.flex.bg-black.header-nav
+www.washingtonpost.com##div.w-100:nth-of-type(4)
+www.washingtonpost.com##.top-0.left-0.absolute.mt-lg
+www.washingtonpost.com##.right-rail.flex-column.flex.hide-for-print.grid-item--cols-lg-4.mt-md-l.grid-item--cols-md-12.grid-item--cols-sm-12.grid-item
+www.washingtonpost.com###comments-wrapper
+www.washingtonpost.com##.pr-lg-lg.grid-item--cols-lg-8.mt-md-l.mt-xxs.mb-xxl-ns.br-l.b-l.grid-item--cols-md-12.grid-item--cols-sm-12.grid-item > div:nth-of-type(8)
+www.washingtonpost.com##.pb-xl.w-100.hide-for-print
+www.washingtonpost.com###top-furniture
+www.washingtonpost.com###magnet-wrapper
+washingtonmonthly.com###sidebar1
+washingtonpost.com###wp-header
+www.washingtontimes.com###wrapper
+www.washingtontimes.com##.full-article > .no-bottom-border.breaking-news.block
+www.washingtontimes.com###footer
+www.washingtontimes.com###secondary
+
+! 4/24/2020 https://www.cnbc.com
+cnbc.com###GlobalFooter
+cnbc.com###GlobalNavigation-Persistent
+
+! 4/24/2020 https://www.nytimes.com
+www.nytimes.com###NYT_TOP_BANNER_REGION
+
+! 4/24/2020 https://kathmandupost.com
+kathmandupost.com##.col-sm-8 > .text-center
+kathmandupost.com##.sticky--bottom__show.sticky--bottom__hide.sticky--bottom.ease
+kathmandupost.com##.story-section > .text-center.bg-lightgray
+
+! 4/25/2020 https://youtube.com
+youtube.com##ytd-watch-next-secondary-results-renderer.ytd-watch-flexy.style-scope
+||www.youtube.com/api/stats/*$all
+youtube-nocookie.com##.ytp-scroll-min.ytp-pause-overlay:has(:has-text(/more videos/i))
+youtube.com###clarify-box > .ytd-watch-flexy.style-scope:has(:has-text(/COVID-19/i))
+youtube.com###button.size-small.style-suggestive.ytd-button-renderer.style-scope
+youtube.com##ytd-button-renderer.size-default.style-default.force-icon-button.ytd-menu-renderer.style-scope:nth-of-type(2)
+youtube.com###guide-button.ytd-masthead.style-scope
+youtube.com###country-code.ytd-topbar-logo-renderer.style-scope
+youtube.com###contentWrapper > .ytd-popup-container.style-scope:has(:has-text(/join this channel/i))
+youtube.com###subscribe-button.ytd-video-secondary-info-renderer.style-scope
+youtube.com###sponsor-button
+youtube.com##.ytp-cards-teaser
+youtube.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.upsellDialogRenderer.isVisible, false)
+youtube.com##+js(set, ytInitialData.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer.forceConsent, false)
+youtube.com###dialog
+youtube.com##.ytd-popup-container.style-scope > .ytd-popup-container.style-scope
+youtube.com##+js(aeld, pause, ConsentBump)
+! Block featured video on channel home page.
+! youtube.com##:matches-path(/featured) ytd-item-section-renderer.ytd-section-list-renderer.style-scope:nth-of-type(1)
+
+! 4/29/2020 https://google.com
+translate.google.com##.notification-area
+www.google.com##.vk_c.yAVMkd
+www.google.com###js-download-header
+chrome.google.com##.Yb
+drive.google.com##.a-ee-zh-k
+www.google.com##.gb_na.gb_F:has(:has-text(/Set an expiration date for your data/i))
+
+drive.google.com###wD0wwd
+play.google.com##.wEDdvc.XBXPXc
+play.google.com##.znPNx
+news.google.com##div.UI9lcc:nth-of-type(2):has(:has-text(/facebook/i))
+news.google.com##div.UI9lcc:nth-of-type(3):has(:has-text(/twitter/i))
+blog.google##.uni-newsletter-toast
+chromeenterprise.google##.visible.ce-cookie-banner
+||consent.google.com^
+google.*##+js(aeld, DOMContentLoaded, CONSENT)
+google.com##.AUiS2
+www.google.com##.BOyx7
+source.cloud.google.com##.ng-star-inserted.mat-snack-bar-center.ng-trigger-state.ng-trigger.ng-tns-c4-0.mat-snack-bar-container
+translate.google.co.in##.notification-area
+
+! 4/26/2020 https://www.zdnet.com
+www.zdnet.com###mainHeader
+www.zdnet.com##.col-4
+
+! 4/26/2020 https://imgur.com
+imgur.com###right-content
+imgur.com###topbar
+i.imgur.com##.icon
+i.imgur.com##.imgur
+||imgur.com/favicon.ico$image
+imgur.com##.EmeraldBannerV2
+imgur.com##.GalleryPage-background
+imgur.com##.Gallery-Sidebar-Wrapper
+imgur.com##.GalleryCover.NewCover
+imgur.com##body > span:has(:has-text(/javascript/i))
+imgur.com##.Gallery-EngagementBar
+imgur.com##.Gallery-Sidebar
+imgur.com##.Footer-wrapper
+imgur.com##.Comment-create
+imgur.com##.BottomRecirc
+imgur.com##.EmeraldButton.Button
+imgur.com##.Accolade-background
+imgur.com##.Gallery-AccoladesBadge
+imgur.com##.EmeraldBannerV1
+
+! 4/26/2020 https://www.theverge.com
+www.theverge.com##.c-global-header__actions
+www.theverge.com##.c-footer
+
+! 4/27/2020 https://www.oneindia.com
+www.oneindia.com##.oi-article-rt
+www.oneindia.com##.rightpanel
+www.oneindia.com###popupDiv
+
+! 4/27/2020 https://www.cloudwards.net
+www.cloudwards.net##.pt-3.bg-white.sticky-top.review_goto_bar
+
+! 4/29/2020 https://www.wired.co.uk
+www.wired.co.uk##.js-c-top-stories-lazy-load.c-top-stories-lazy-load
+www.wired.com##.desktop-nav-sign-in-component
+www.wired.com##.cm-subscribe-link-wrapper
+www.wired.com##.persistent-top
+www.wired.com###logo-bar
+www.wired.com##.persistent-aside--align-left.persistent-aside
+
+! https://reddit.com
+www.reddit.com###COIN_PURCHASE_DROPDOWN_ID
+old.reddit.com##.width-clip
+www.reddit.com###redesign-beta-optin-btn
+i.reddit.com##.mobile-web-redirect-bar
+||styles.redditmedia.com/t5_2qh1i/styles/bannerPositionedImage_przkbr6vwv111.png$image
+old.reddit.com##.score
+old.reddit.com##.unvoted.entry > .tagline > .awardings-bar
+old.reddit.com##.top-matter > .tagline > .awardings-bar
+old.reddit.com##.toggle.subscribe-button.fancy-toggle-button
+old.reddit.com##.unvoted.entry > .tagline > .score-hidden
+old.reddit.com##.read-next-container
+old.reddit.com##.footer-parent
+old.reddit.com##.listingsignupbar
+!stop old reddit redirect out.reddit.com outbound clocks
+old.reddit.com##+js(remove-attr.js, data-outbound-url)
+
+
+! 4/30/2020 https://www.salon.com
+www.salon.com###adblockModal
+www.salon.com##.right-rail
+www.salon.com###up-next
+www.salon.com##div.outer-ad-unit-wrapper
+www.salon.com###rc-widget-30ad7f
+www.salon.com###nav-wrapper
+
+! 5/1/2020 https://repairmymobile.in
+repairmymobile.in###genesis-sidebar-primary
+
+! 5/1/2020 https://www.amrita.edu
+www.amrita.edu##.modal-success.modal-notify.modal-medium.modal-dialog > .modal-content
+www.amrita.edu###centralModalSuccess
+www.amrita.edu##.in.fade.modal-backdrop
+
+! 5/1/2020 https://www.thetelegraph.com
+www.thetelegraph.com##header
+www.thetelegraph.com##.article-sidebar
+www.thetelegraph.com##footer
+
+! 5/1/2020 https://www.huffingtonpost.in
+www.huffingtonpost.in###desktop__main_header
+
+! 5/1/2020 https://m.imdb.com
+imdb.com###inline20_placeholder_wrapper
+imdb.com###inline20_wrapper
+imdb.com###promoted-partner-bar
+
+! 5/1/2020 https://onedrive.live.com
+onedrive.live.com##div.LeftNav-subLinksAsComponent:nth-of-type(2)
+
+! 5/2/2020 https://fossbytes.com
+fossbytes.com##.td-pb-border-top.td-main-sidebar.td-pb-span4
+
+! 5/3/2020 https://duckduckgo.com
+duckduckgo.com##.badge-link--newsletter.badge-link--thumbnail.js-badge-link.badge-link--serp.badge-link
+https://duckduckgo.com/y.js$all
+
+! 5/4/2020 https://www.glasswire.com
+www.glasswire.com###discount-modal
+
+! 5/4/2020 https://nakedsecurity.sophos.com
+sophos.com###sophos_ad-3
+
+! 5/7/2020 https://bing.com
+bing.com###b_notificationContainer_bop
+bing.com###b_opalpers
+bing.com###idCont
+bing.com###id_l
+bing.com##.bottom_row
+bing.com###bnp\.nid\.62899
+bing.com###t_cookieInfo
+bing.com###t_termsInfo
+bing.com##.upsellContainer
+bing.com###fbpgbt
+bing.com###b_pole
+
+! 5/8/2020 https://www.indiatoday.in
+www.indiatoday.in###header
+
+! 5/8/2020 https://www.bloomberg.com
+bloomberg.com###bb-that
+bloomberg.com##.bottom-left-rail-touts
+bloomberg.com##.bb-global-footer
+bloomberg.com##.navi-section-mobile__container
+bloomberg.com##.leaderboard-wrapper--pinned.leaderboard-wrapper
+bloomberg.com##.zipr-recirc__container
+bloomberg.com###navi
+
+
+
+! 5/9/2020 https://qz.com
+qz.com###header-bar
+
+! 5/9/2020 https://www.news18.com
+www.news18.com##.corona-toolbarbtn
+www.news18.com###right
+www.news18.com##.n18nheader
+www.news18.com##nav
+www.news18.com##.secont-lnav
+
+! 5/9/2020 https://www.technologyreview.com
+www.technologyreview.com##.overlayFooter__wrapper--3DhFn
+
+! 5/11/2020 https://www.livelaw.in
+livelaw.in##.modal_wrapper_frame
+livelaw.in###right_level_1
+livelaw.in###right_level_5
+
+! 5/11/2020 https://www.thehindu.com
+www.thehindu.com##.ad-ft
+www.thehindu.com##.article-header-cont
+www.thehindu.com##.clear.main-menu.navbar
+www.thehindu.com##.hidden-xs.trending-menu-home.trending-menu.navbar
+www.thehindu.com###test
+www.thehindu.com###stickyfooterarticle
+www.thehindu.com##.nopad.support-jlm.col-sm-12.col-xs-12.col-md-12
+www.thehindu.com##.row > .hidden-xs.hidden-sm
+www.thehindu.com##.custom-author.author-bottom
+www.thehindu.com##.comment-rules
+
+! 5/11/2020 https://www.ndtv.com
+ndtv.com##.stk-t_wr > .ss
+ndtv.com###__cube
+ndtv.com###stk_cnt
+ndtv.com##.header
+ndtv.com##.rhs_section
+ndtv.com##._ftrwrp
+ndtv.com##.story_footer
+sports.ndtv.com##.m-nv_clr.m-nv.vj-hdr-elm
+sports.ndtv.com##.sub-nav
+sports.ndtv.com##.order-2.vjl-md-12.vjl-lg-3
+sports.ndtv.com##.ss_pg.ss
+sports.ndtv.com###footer
+sports.ndtv.com##.cmt_btn
+sports.ndtv.com##.sp_txt-sm
+sports.ndtv.com##.order-2.vjl-md-12.vjl-lg-12
+
+! 5/12/2020 https://www.livemint.com
+www.livemint.com###corona-div
+
+
+! 5/13/2020 https://www.cracked.com
+www.cracked.com###content-card-top
+www.cracked.com###header
+
+! 5/13/2020 https://wsdlbrowser.com
+||wsdlbrowser.com/js/fuckadblock.js$script,1p,important
+
+! 5/14/2020 https://www.businessinsider.in
+www.businessinsider.in##span.ad-brdr-top
+www.businessinsider.in###corona-stage
+www.businessinsider.in##.right_content
+www.businessinsider.in###page-header
+www.businessinsider.in###articlelist
+www.businessinsider.in##.summary-list
+www.businessinsider.in##.ArtInnerCont > .mobile_padding
+www.businessinsider.in##.clearfix.tgpfooter
+www.businessinsider.in###formContainer
+
+! 5/14/2020 https://www.businessinsider.com
+www.businessinsider.com##span.ad-brdr-topwww
+www.businessinsider.com##.right_content
+www.businessinsider.com###page-header
+www.businessinsider.com###articlelist
+www.businessinsider.com##div.clearfix
+www.businessinsider.com###formContainer
+
+
+! 5/14/2020 https://theonion.com
+theonion.com##.js_header
+theonion.com##.zVObM.sc-17y8tyw-0.js_topbar
+theonion.com###sidebar_wrapper
+theonion.com##.js_footer-container
+
+! 5/14/2020 https://jalopnik.com
+jalopnik.com##.js_header
+jalopnik.com##.zVObM.sc-17y8tyw-0.js_topbar
+jalopnik.com###sidebar_wrapper
+jalopnik.com##.js_footer-container
+
+
+! 5/15/2020 https://gfycat.com
+gfycat.com##.type3.pro-cta
+gfycat.com##.upnext-horizontal
+gfycat.com##.top-slot > div > [href="https://gfycat.com/signup"]
+||assets.gfycat.com/self/dktp2/popular_dktp2.png$image
+gfycat.com##[href="https://gfycat.com/gaming"]
+
+! 5/17/2020 https://starblast.io
+starblast.io##.frozenbg.adblock
+
+! 5/17/2020 https://www.lastpass.com
+www.lastpass.com##.lp-popup.lp-pg-popup
+
+! 5/17/2020 https://hide.me
+hide.me###offer-modal
+hide.me##.in.fade.modal-backdrop
+
+! 5/17/2020 https://de.hideproxy.me
+de.hideproxy.me##.hidemeproxy__getnow
+
+! 5/18/2020 https://www.moneycontrol.com
+www.moneycontrol.com##.budget_header_news.headinsde.responsive_true
+www.moneycontrol.com###right
+www.moneycontrol.com##.fright.clearfix.img_tagbox
+www.moneycontrol.com##.wd225.MR30.FL
+www.moneycontrol.com##.respons_foot_mob.footerMobile
+www.moneycontrol.com##.ftinsde.respons_foot_desk
+www.moneycontrol.com##.hide_in_desktop.footer_navigation_list
+
+! 5/22/2020 https://www.techwalla.com
+www.techwalla.com##.component-popups
+
+! 5/23/2020 https://www.whois.com
+www.whois.com##.whois_rhs_column
+
+! 5/23/2020 https://www.ecosia.org
+www.ecosia.org##.install-popup
+
+! 5/25/2020 https://siliconangle.com
+siliconangle.com##.sidebar-content.col-xs-12.col-md-4
+siliconangle.com###single-post-meta
+
+! 5/26/2020 https://www.financialexpress.com
+www.financialexpress.com###nextstory
+www.financialexpress.com###append_cubebox_box
+
+! 5/27/2020 https://uploadrar.com
+uploadrar.com##div.download0page:nth-of-type(1) > .blockpage
+
+! 5/27/2020 https://www.uploadship.com
+www.uploadship.com##center:nth-of-type(3) > .embed-container
+||images.dmca.com^$important
+||pagead2.googlesyndication.com^$important
+
+!https;//usercloud.com
+userscloud.com##.cc-color-override-530831885.cc-right.cc-bottom.cc-theme-classic.cc-type-info.cc-floating.cc-window
+
+! 5/28/2020 https://www.theatlantic.com
+www.theatlantic.com###share-social
+www.theatlantic.com###main-navigation--lacroix
+
+! 5/28/2020 https://www.instagram.com
+!instagram.com##.RnEpo
+instagram.com##body:style(overflow: auto !important)
+instagram.com##.Yx5HN.RnEpo div:has-text(/Log in to continue/):nth-ancestor(1)
+instagram.com##.Yx5HN.RnEpo div:has-text(/Log in to continue/):xpath(..)
+instagram.com##.Yx5HN.RnEpo:has([href*="/emailsignup/"])
+instagram.com##._9AhH0
+www.instagram.com##.GZkEI.ccgHY.e-Ph9
+||instagram.fhyd2-1.fna.fbcdn.net/favicon.ico$image,1p
+instagram.com##.ZUqME.N9d2H.TxciK._7JkPY.D8xaz.O1flK.HcJZg.XfCBB.IY_1_.CIRqI._4EzTm.YBx95.pmxbr.IwRSH.Igw0E.tHaIX
+@@||z-p42-instagram.c10r.facebook.com^
+
+! 6/1/2020 https://en.savefrom.net
+savefrom.net##.extra.televzr
+savefrom.net##.b-widget-right
+
+! 6/1/2020 https://www.4kdownload.com
+www.4kdownload.com##.remodal-is-opening.remodal-wrapper
+www.4kdownload.com##.remodal-is-opening.remodal-overlay
+
+! 6/2/2020 https://slate.com
+slate.com##.bottom-ad
+slate.com##div.ad--desktopOnly.slate-ad:nth-of-type(7)
+slate.com##.top-ad
+
+! 6/3/2020 https://www.essence.com
+www.essence.com###masthead
+
+! 6/3/2020 https://apkpure.com
+||static.apkpure.com/www/static/imgs/aegon_qr.png$image
+apkpure.com##.right_apkpure
+
+! 6/3/2020 https://www.bleepingcomputer.com
+www.bleepingcomputer.com##header
+
+! 6/4/2020 https://waitbutwhy.com
+waitbutwhy.com###emailSidebar
+
+! 6/4/2020 https://www.bbc.com
+www.bbc.com##.blue-tit__inner
+www.bbc.com###core-navigation
+www.bbc.com##.column--secondary
+
+! 6/7/2020 https://aternos.org
+aternos.org##.responsive-skyscraper.ad
+
+! 6/7/2020 https://www.redgifs.com
+www.redgifs.com##.navigation-container
+www.redgifs.com##.toast-notification--pro-cta
+
+! 6/7/2020 https://forum.mobilism.org
+forum.mobilism.org##.default.footable-loaded.announcement.table-hover.table-primary.table-white.table.footable
+
+! 6/7/2020 https://www.komando.com
+www.komando.com###k2-prefs-center-pushdown
+
+! 6/8/2020 https://www.techjunkie.com
+www.techjunkie.com##.get-expressvpn
+
+! 6/8/2020 http://www.mediafire.com
+www.mediafire.com###cookie-accept-footer
+www.mediafire.com###adwrapper
+www.mediafire.com##.nopop.dl-promo-cont
+
+! 6/8/2020 https://opencollective.com
+opencollective.com##.kgQmWQ.CovidBanner__Wrapper-sc-1rcl4so-0
+
+! 6/9/2020 https://www.keepersecurity.com
+www.keepersecurity.com##.in.fade.modal-backdrop
+
+! 6/15/2020 https://gulfnews.com
+gulfnews.com##.gn-sticky-fill.main-header
+
+! 6/16/2020 https://advox.globalvoices.org
+advox.globalvoices.org###cboxOverlay
+advox.globalvoices.org###cboxContent
+
+! 6/16/2020 https://www.dnaindia.com
+www.dnaindia.com##header
+www.dnaindia.com###livebtbox
+
+! 6/16/2020 https://pastebin.com
+pastebin.com###float-box-frame
+
+! 6/17/2020 https://bgr.com
+bgr.com##.m-bartender.h-bartender.site-header
+bgr.com##.sticky-site-header-shim
+bgr.com##.site-footer
+bgr.com##.bgr-recommended.channel-break.clearfix
+bgr.com##.columns.sidebar-content
+
+! 6/17/2020 https://www.msn.com
+www.msn.com###sticky-footer-wrapper
+www.msn.com##.head
+www.msn.com##.playlist.customsection.pagingsection
+
+! 6/17/2020 https://www.india.com
+||static.india.com/wp-content/uploads/2020/03/corona-Banner-desktop.jpg$image
+www.india.com##.navbar-fixed-top.iwplheader-wrap
+
+! 6/19/2020 https://9to5mac.com
+9to5mac.com###js-site-header
+
+! 6/19/2020 https://fastestvpn.com
+fastestvpn.com###saveBig
+fastestvpn.com##.in.fade.modal-backdrop
+
+! 6/19/2020 https://www.lifewire.com
+www.lifewire.com###header_1-0
+
+! 6/19/2020 https://homepage.footybite.com
+homepage.footybite.com##.tracking-protection-alert.alert-danger.alert.text-center
+homepage.footybite.com###news-feed
+
+! 6/19/2020 http://stream-cr7.net
+||stream-cr7.net/embed/slider_one_laptop.jpg$image
+||stream-cr7.net/embed/footyshoes.gif$image
+
+! 6/20/2020 https://www.digg.com
+www.digg.com###subscribePromotion
+www.digg.com##.ads-homepage-leaderboard-btf
+
+! 6/20/2020 https://discord.com
+discord.com##.padded-302COx.outer-1AjyKL.consentCard-1iSxB_.card-2qZngs
+discord.com##.height36-36OHCc.size14-3iUx6q.notice-2FJMB4.noticeDefault-362Ko2
+
+! 6/20/2020 https://open.spotify.com
+open.spotify.com##.ed.dm.ec.eb.ea.d2.df.b4.b3.as.ap.ao
+open.spotify.com##._54af59bf42b44701f2393fc90cbc58cc-scss
+open.spotify.com##.Root__now-playing-bar > .now-playing-bar-container > .c45bc38be8a0ad1cdf6705f36d733245-scss
+open.spotify.com##.Root__now-playing-bar > ._82a78ff58d3fcba0cb9b8083fe6dd05c-scss
+
+! 6/21/2020 https://dropgalaxy.com
+dropgalaxy.com##.footer
+dropgalaxy.com##.fixed-top.navbarLayout.navbar-expand-md.navbar
+dropgalaxy.com##.btn-danger.btn-lg.btn-block.btn
+dropgalaxy.com##.text-primary
+dropgalaxy.com##.modalpop-content
+dropgalaxy.com###modalpop
+
+! 6/22/2020 https://www.thestar.com
+www.thestar.com##.right-rail-ads-container
+www.thestar.com##.o-sub-menu
+www.thestar.com##.o-hero-header
+www.thestar.com##.o-tophat
+www.thestar.com##.leaderboard-ad-component.alpha__global
+www.thestar.com##.o-main-menu--loaded.o-main-menu
+www.thestar.com##.cta-container
+www.thestar.com###footer
+www.thestar.com##.article-related-inline
+
+! 6/22/2020 https://www.football-italia.net
+www.football-italia.net###page_footer
+www.football-italia.net##.view-non-fp-club-links.view > .view-content
+
+! 6/22/2020 https://www.marca.com
+www.marca.com###banda_suscripcion
+
+! 6/23/2020 https://www.komando.com
+www.komando.com##.site-header
+
+! 6/24/2020 https://in.pcmag.com
+in.pcmag.com###adkit_billboard
+
+! 6/24/2020 http://givemereddit.stream
+givemereddit.stream##.chat-box
+givemereddit.stream##.lg\:w-3\/12.overflow-hidden.rounded.w-full
+
+! 6/24/2020 https://addons.opera.com
+addons.opera.com##.get-opera
+
+! 6/24/2020 https://www.infobae.com
+www.infobae.com##.\33 akc4qmnz1rk
+www.infobae.com##[href="https://www.infobae.com"]
+
+! 6/25/2020 https://www.drivereasy.com
+www.drivereasy.com##.float-bar
+
+! 6/25/2020 https://www.startpage.com
+www.startpage.com###home__section__set-as-home-button
+www.startpage.com###home__section__story
+www.startpage.com###home__section__tech
+www.startpage.com##.home__section__reviews.home__section
+www.startpage.com###home__section__privacy
+www.startpage.com##.curve-top
+www.startpage.com##.footer-home
+www.startpage.com##.home__section__learn-more
+www.startpage.com##.home__section__learn-more-separator
+www.startpage.com##.widget-install-sp-container
+
+! 6/25/2020 https://www.india.com
+www.india.com###header
+
+! 6/26/2020 https://creativecommons.org
+creativecommons.org###deed-donate-slide
+creativecommons.org###donation-bar-wrapper
+
+! 6/26/2020 https://www.npr.org
+www.npr.org###globalheader
+
+! 6/26/2020 https://www.propublica.org
+www.propublica.org##.slide-down.compact.stuck.masthead-wrapper
+
+! 6/26/2020 https://silk-browser.en.aptoide.com
+silk-browser.en.aptoide.com##.cEAGeC.cookie-notice__CookieNoticeContainer-sc-1gzenic-1
+
+! 6/26/2020 https://telegramtutorials.com
+telegramtutorials.com##.mysticky-welcomebar-animation
+
+! 6/26/2020 https://telegramchannels.me
+telegramchannels.me##.featured.media-card.card
+
+! 6/26/2020 https://www.cosmopolitan.com
+www.cosmopolitan.com##.nav
+
+! 6/27/2020 https://clips.twitch.tv
+clips.twitch.tv##.tw-pd-1.tw-elevation-2.tw-c-text-overlay.tw-c-background-overlay
+www.twitch.tv##.tw-relative.tw-pd-2
+www.twitch.tv##.tw-pd-2.tw-mg-1.tw-flex-column.tw-flex.tw-elevation-1.tw-c-background-base.tw-border-radius-large
+www.twitch.tv##.tw-relative.tw-overflow-hidden.tw-justify-content-center.tw-interactive.tw-inline-flex.tw-full-width.tw-core-button--primary.tw-core-button.tw-border-top-right-radius-medium.tw-border-top-left-radius-medium.tw-border-bottom-right-radius-medium.tw-border-bottom-left-radius-medium.tw-align-middle.tw-align-items-center
+www.twitch.tv##.tw-top-0.tw-right-0.tw-pd-1.tw-absolute
+www.twitch.tv##.tw-relative > .tw-relative.tw-overflow-hidden.tw-justify-content-center.tw-interactive.tw-inline-flex.tw-full-width.tw-core-button--secondary.tw-core-button.tw-border-top-right-radius-medium.tw-border-top-left-radius-medium.tw-border-bottom-right-radius-medium.tw-border-bottom-left-radius-medium.tw-align-middle.tw-align-items-center
+www.twitch.tv##.scrollable-area--suppress-scroll-x.scrollable-area.community-highlight-stack__scroll-area--disable
+www.twitch.tv##.channel-leaderboard.icgURv.Layout-sc-nxg1ff-0
+
+! 6/27/2020 https://www.dailymail.co.uk
+||i.dailymail.co.uk/i/furniture/facebook/DailyMail/DailyMail.png$image
+www.dailymail.co.uk###mini-carousel-wrapper
+www.dailymail.co.uk##.bdrgr2.page-header
+www.dailymail.co.uk##.beta
+
+! 6/28/2020 https://www.lawyersclubindia.com
+www.lawyersclubindia.com##.side_bar_300.col-md-4
+||www.lawyersclubindia.com/img/lawyered.jpg$image
+
+! 6/28/2020 https://admission.aglasem.com
+admission.aglasem.com###topbarnote
+files.aglasem.com###topbarnote
+admission.aglasem.com##.aglas-widget.widget
+
+! 6/29/2020 https://www.change.org
+www.change.org##.modal-small.animate-zoom-in.animate.modal-dialog
+www.change.org##.modal
+
+! 7/1/2020 https://microsoftedge.microsoft.com
+microsoftedge.microsoft.com###banner
+
+! 7/2/2020 https://www.ibtimes.sg
+www.ibtimes.sg##mybot
+
+! 7/03/2020 https://footystats.org
+footystats.org##.h2h-premium-messaging-wrapper
+footystats.org##.h2h-blur:style(filter:none !important)
+
+! 7/3/2020 https://in.mashable.com
+in.mashable.com###sidebar
+
+! 7/3/2020 https://www.scoopwhoop.com
+www.scoopwhoop.com##mybot
+
+! 7/5/2020 https://usatoday.com
+usatoday.com##.gnt_n
+usatoday.com##.gnt_rr
+usatoday.com##.gnt_xbr
+usatoday.com##.gnt_em_vp__tavp.gnt_em
+usatoday.com##a.gnt_cw_sl
+
+! 7/5/2020 https://www.newsweek.com
+www.newsweek.com##.page-header
+
+! 7/5/2020 https://www.inquirer.com
+www.inquirer.com###fGehZP163vVT2s
+www.inquirer.com##.no-padding.flex
+
+! 7/5/2020 https://www.fastcompany.com
+www.fastcompany.com##.masthead
+
+! 7/6/2020 https://solgaard.co
+solgaard.co##.banana-globalBottom-container.banana-container
+
+! 7/6/2020 https://www.ultimate-guitar.com
+www.ultimate-guitar.com##.qRSX3
+
+! 7/6/2020 https://tabs.ultimate-guitar.com
+tabs.ultimate-guitar.com##._35CMM:has(:has-text(/professional guitarists/i))
+tabs.ultimate-guitar.com##.SiteWideBanner
+tabs.ultimate-guitar.com##._3N8Fk.AJoe5:has(:has-text(/pro/i))
+tabs.ultimate-guitar.com##.qRSX3:has(:has-text(/pro access/i))
+tabs.ultimate-guitar.com##.QKbu9.VkTi2
+tabs.ultimate-guitar.com##._1EK-j
+tabs.ultimate-guitar.com##.kWOod._1ofov._2KJtL.SqUm5.xf2lB._3SwgZ._385sR._3xQ33 > ._3aiGQ.kWOod._1ofov._2KJtL:has(:has-text(/pro/i))
+
+! 7/6/2020 https://cisomag.eccouncil.org
+cisomag.eccouncil.org##.td-main-sidebar.td-pb-span4
+cisomag.eccouncil.org##.td-header-style-1.td-header-wrap.td-header-container
+cisomag.eccouncil.org###cisom-1108660304
+cisomag.eccouncil.org##.td-container.td-footer-container
+
+! 7/6/2020 https://github.com
+github.com##p:has(:has-text(/GitHub Channel on Youtube/i))
+github.com##.js-remove-unless-platform.mt-0.rounded-0.p-0.Box-row--hover-gray.Box-row > .p-3.no-underline.text-bold.text-gray-dark.flex-items-center.d-flex:has(:has-text(/desktop/i))
+github.com##.hx_cookie-banner
+github.com##.rounded-1.signup-prompt-bg
+gist.github.com##.pb-3.gist-banner.gist-detail-intro
+
+! 7/6/2020 https://send.firefox.com
+send.firefox.com###ncid-c434:has(:has-text(/full-device VPN/i))
+
+! 7/6/2020 https://www.brailletranslator.org
+www.brailletranslator.org###gc-rightcol
+
+! 7/9/2020 https://www.privacytools.io
+privacytools.io##div.alert-success.alert:nth-of-type(1):has(:has-text(/financial contributions/i))
+privacytools.io###sponsors
+
+! 7/9/2020 https://blog.mozilla.org
+blog.mozilla.org###nav-global
+
+! 7/9/2020 https://blog.mozilla.org
+blog.mozilla.org###nav-util
+
+! 7/9/2020 https://www.publish0x.com
+www.publish0x.com###registerPopup
+
+! 7/9/2020 https://incyberdefense.com
+incyberdefense.com##.main-sidebar-col.cactus-sidebar.col-md-4
+
+! 7/11/2020 https://vice.com
+vice.com##.article__socialize
+vice.com##.navbar-wrapper
+
+! 7/11/2020 https://www.livemint.com
+livemint.com##.contentSec > div > .close-btn.sticky2.btnClose
+livemint.com###header
+
+! 7/12/2020 https://www.deccanherald.com
+www.deccanherald.com###footer-wrapper
+www.deccanherald.com###header-wrapper
+
+! 7/14/2020 https://h30434.www3.hp.com
+h30434.www3.hp.com##.alert-section > ul > .notification-alert
+h30434.www3.hp.com##.lia-top-quilt.lia-quilt-layout-one-column.lia-quilt-forum-topic-page.lia-quilt > .lia-quilt-row-footer.lia-quilt-row
+
+! 7/15/2020 kimcartoon.to
+@@||kimcartoon.to/cdn-cgi/*$xhr,1p
+
+! 7/17/2020 https://trello.com
+trello.com##.mod-warning.header-banner
+
+! 7/17/2020 https://www.flickr.com
+flickr.com##.moola-search-div:has(:has-text(/pro/i))
+
+! 7/18/2020 https://www.streamonsport.net
+www.streamonsport.net###fcnbox
+
+! 7/18/2020 https://clipto.pro
+clipto.pro##.no-pointer-events.fullscreen.q-dialog
+
+! 7/19/2020 https://nordvpn.com
+nordvpn.com##.in.fade.modal-backdrop
+nordvpn.com##.px-sm-14.p-6
+nordvpn.com##.Popup.brand-popup
+
+! 7/19/2020 https://shrib.com
+shrib.com###umWaerbig
+
+! 7/19/2020 https://www.gifdeliverynetwork.com
+www.gifdeliverynetwork.com##.iframe-top
+
+
+! 7/20/2020 https://downloadvimeovideo.online
+downloadvimeovideo.online##.text-center.converter2.converter > center
+
+! 7/20/2020 https://meduza.io
+meduza.io##.MaterialPanel-close
+
+! 7/20/2020 https://techradar.com
+techradar.com##.region_redirect_popup_asset
+
+! 7/20/2020 https://www.makeuseof.com
+www.makeuseof.com##.header-wrap
+www.makeuseof.com##.ad-zone-container-content-word-count-1
+
+! 7/22/2020 https://www.commondreams.org
+www.commondreams.org###header-container
+www.commondreams.org##.l-region--sidebar-second.l-region
+www.commondreams.org##.l-footer
+
+! 7/22/2020 https://www.nbcnews.com
+www.nbcnews.com###hfs-header
+
+! 7/22/2020 https://www.imore.com
+www.imore.com##.no-amazon
+
+! 7/23/2020 https://www.expressvpn.com
+www.expressvpn.com###designstudio-button
+
+!tomshardware
+tomshardware.com.com##+js(aopr, _sp_._networkListenerData)
+
+! 7/25/2020 https://pastebin.com
+pastebin.com##.popup-container
+pastebin.com##.-no-padding.content__text
+
+! 7/25/2020 truecrypt.ch
+||www.cloudsigma.com/uploads/banners/*
+
+! 7/27/2020 https://www.alexa.com
+www.alexa.com##div.TopSitesAd
+www.alexa.com##.top-nav-link.navigation.Orange.Mkbutton
+www.alexa.com##div.reverse.flex:nth-of-type(1) > .MarketingPanel
+www.alexa.com##.MarketingWhite.ACard
+
+! 7/28/2020 ifunny.co
+||ifunny.co/images/1x1.gif$image,1p
+
+! 7/29/2020 https://www.telegraph.co.uk
+www.telegraph.co.uk##.site-header-wrapper
+www.telegraph.co.uk##.article__layout--sidebar
+
+! 7/29/2020 https://apkpure.com
+apkpure.com##.aegon-link
+apkpure.com###ad-aegon-side
+
+! 7/29/2020 https://www.clippituser.tv
+www.clippituser.tv##.download
+
+! 7/29/2020 https://web.archive.org
+web.archive.org##[href="//archive.org/donate/"]
+web.archive.org###float-box-frame
+archive.org##.js-donate-banner
+web.archive.org###donato
+
+! 8/1/2020 https://www.chron.com
+www.chron.com##header
+
+! 8/2/2020 https://www.cnet.com
+www.cnet.com##.broad.desktop.newsletter-subscribe-form
+
+! 8/3/2020 https://inshorts.com
+inshorts.com##.z-depth-1.hide-on-med-and-down
+
+! 8/3/2020 https://feminisminindia.com
+feminisminindia.com##.td-main-sidebar
+
+! 8/6/2020 https://babylonbee.com
+babylonbee.com##.mb-4.p-3.h-100.article-cta-box
+
+! 8/6/2020 https://onezero.medium.com
+onezero.medium.com##.sk.cv.n.sj.si
+onezero.medium.com##.s.r.n > .p.n
+
+! 8/7/2020 https://www.linkedin.com
+linkedin.com##.show.cta-modal
+
+! 8/7/2020 https://www.crunchbase.com
+www.crunchbase.com##.side-panel > .ng-star-inserted > section-card
+
+! 8/8/2020 https://zapier.com
+zapier.com##.css-1b2entt-HomepageSurvey
+
+! 9/9/2020 https://amazon.*
+amazon.*###navFooter
+amazon.*##.nav-flyout
+amazon.*###kcpApp_feature_div
+amazon.*###nav-main > .nav-right
+amazon.*###rightRail > .a-box-inner
+amazon.*##.uilm-section.a-spacing-none.a-section
+amazon.*###amazonClubSuggestionWidget_feature_div
+amazon.*##.bucket.vse-empty-view-container.a-section
+amazon.*###mediaTab_heading_0:has(:has-text(/Kindle/i))
+amazon.*###sims-fbt:has(:has-text(/frequently bought/i))
+amazon.*###sp_detail_thematic:has(:has-text(/sponsored/i))
+amazon.*##.pr-fb-base.amazon-follow-initialized.amazon-follow
+amazon.*##li.unselected.swatchElement:has(:has-text(/Audio/i))
+amazon.*##li.unselected.swatchElement:has(:has-text(/kindle/i))
+amazon.*###quickPromoBucketContent:has(:has-text(/business account/i))
+amazon.*###p13n-m-desktop-dp-sims_OnlineDpSimsAlternatesStrategy-sims-feature-3
+amazon.*###p13n-m-desktop-dp-sims_vtp-60-sims-feature-3:has(:has-text(/customers/i))
+amazon.*##.a-spacing-top-base.a-spacing-medium.a-section > .a-padding-base.a-section
+amazon.*##div.authorImageGallery> .pr-fb-base.amazon-follow-initialized.amazon-follow
+amazon.*###desktop-dp-sims_purchase-similarities-sims-feature:has(:has-text(/bought/i))
+amazon.*###desktop-dp-sims_session-similarities-sims-feature:has(:has-text(/customers/i))
+amazon.*###p13n-m-desktop-dp-sims_p13n-reading-unified-pbook-sims-v2-sims-feature-2:has(:has-text(/bought/i))
+amazon.*##[src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/MAI/Sweepstakes/June20/SWM_DownloadApp._CB410314483_.jpg"]
+||images-eu.ssl-images-amazon.com/images/G/31/prime/Gateway/2020/June/gaming-swm._CB430661085_.jpg$image
+
+! 8/10/2020 https://www.deccanchronicle.com
+www.deccanchronicle.com##.header
+
+! 8/10/2020 https://smallpdf.com
+smallpdf.com##.iGazQq.sc-1lt7696-5
+smallpdf.com##.BOcGQ.qw9agi-0
+
+! 8/10/2020 https://www.shiksha.com
+www.shiksha.com###chat-container
+www.shiksha.com##.cokkie-lyr
+www.shiksha.com##.sub_block
+
+! 8/10/2020 https://www.collegedekho.com
+www.collegedekho.com###chatdiv
+www.collegedekho.com##.ctaBlock.block
+www.collegedekho.com##.setAlerttopmargin
+www.collegedekho.com##.newAlertButton
+
+! 8/10/2020 https://www.careers360.com
+www.careers360.com##.course_view.actionBox.cardBlk
+www.careers360.com##.fixStickyBottom
+
+! 8/10/2020 https://www.tipsyatricks.com
+www.tipsyatricks.com###SITE_FOOTERinlineContent
+
+! 2020-08-11 https://forum.xda-developers.com
+forum.xda-developers.com##div.thread-row:has(:has-text(/XDA-Developers and the GPL/i))
+forum.xda-developers.com##div.thread-row:has(:has-text(/A message from the mod/i))
+forum.xda-developers.com##.xda_suggested_apps.widget
+
+! 2020-08-13 https://www.wsj.com
+www.wsj.com###bottom-sticky-track
+www.wsj.com###full-header
+
+! 2020-08-14 https://www.bgr.in
+www.bgr.in##header
+www.bgr.in##.rightWrap
+www.bgr.in##footer
+www.bgr.in##.interest-sec
+www.bgr.in##.clearfix.blockquote-box
+
+! 2020-08-14 https://www.geeksforgeeks.org
+www.geeksforgeeks.org###secondary
+
+! 2020-08-14 https://apkpure.com
+apkpure.com###comment
+
+! 2020-08-14 apkpure.com
+||macblurayplayer.com^
+
+! 2020-08-14 null
+##.Welcome_enterDone__3Hg0J.Welcome_root__3vIUY
+
+! 2020-08-14 https://medium.com
+medium.com##.y.in.im.il.ik.ij.ii.ih.ig.n
+medium.com##.y.x.w.c.v.u.t.s.r
+medium.com##.r.kt.ks
+medium.com##.tk > div > .bd > span > .eb.ea.bq.dz.dy.bn.bm.bl.bk.bj.bi.bh.bg.dx.dw > svg
+medium.com##.y.dp.n.mp > .o.n
+medium.com##.p.kr.n.mn.mm > div:nth-of-type(2) > .p.n
+medium.com##.sg.sf.r.se
+
+! 2020-08-14 https://blog.medium.com
+blog.medium.com##.s.r.n
+
+! 2020-08-14 https://onezero.medium.com
+onezero.medium.com##.am.ck.el.ab.ek.ej.ei.eh
+onezero.medium.com##.cx.hz.hy.hx.hw.hv.hu.ht.hs.n
+onezero.medium.com##.am.lp.lo
+
+! 2020-08-14 duckduckgo.com
+||external-content.duckduckgo.com/favicon.ico$image
+
+! 2020-08-15 https://medium.com
+medium.com##.sw.sv.su.u.st.t.s
+medium.com##.t.s.cj
+
+! 2020-08-15 https://www.mozilla.org
+www.mozilla.org##.c-navigation-fxa-cta-container
+
+! 2020-08-16 https://www.embibe.com
+www.embibe.com##.site-header
+
+! 2020-08-16 https://www.oracle.com
+www.oracle.com##.darktheme.u24v0.u24
+
+! 2020-08-16 https://www.gsmarena.com
+www.gsmarena.com###subHeader
+
+! 2020-08-17 https://in.pcmag.com
+in.pcmag.com##header
+
+! 2020-08-19 https://notionpages.com
+notionpages.com##.nVip__notionPagesPopupContainer
+
+! 2020-08-19 https://www.pcworld.com
+www.pcworld.com###page-top
+
+! 2020-08-19 https://ello.co
+ello.co##.css-46bss5
+
+! 2020-08-19 https://www.wired.com
+||media.wired.com/photos/5d7ac5680a30b000089d5b2a/master/w_*%2Cc_limit/Carve_Longreads%252520newsletter_new.jpg$image
+||media.wired.com/photos/5ccb6d0d2c90a35c66b7d9b8/master/w_*%2Cc_limit/Print_wired_black_on_white_003.jpg$image
+
+! 2020-08-20 https://www.producthunt.com
+www.producthunt.com##.dismissableClassName_c8c4a.large_bbe28.container_88f8e
+www.producthunt.com##div > .group_aeef2:has(:has-text(/promoted/i))
+www.producthunt.com##.aside_98aab > div:nth-of-type(5):has(:has-text(/promoted/i))
+
+! 2020-08-20 https://www.bitchute.com
+||static-3.bitchute.com/live/cover_images/mUqaWTvdOfQs/HNwfhllnZX8_640x360.jpg$image
+www.bitchute.com##.plyr__poster
+
+! 2020-08-20 https://music.apple.com
+||music.apple.com/assets/upsell/banner_gradient-8c83b7d4fdfb92eeca7a49eac6921aed.jpg$image
+music.apple.com##.locale-switcher-banner.locale-switcher--amweb
+
+! 2020-08-21 https://duckduckgo.com
+duckduckgo.com##.user-loc-cta
+
+! 2020-08-21 https://www.whynopadlock.com
+www.whynopadlock.com##.alert-info.alert:has(:has-text(/sign up/i))
+
+! 2020-08-23 https://www.algolia.com
+www.algolia.com##.md\:ai-center.md\:d-flex.md\:m-20.md\:bdr-max.md\:w-500.bgc-white.right-0.bot-0.left-0.z-max.pos-fixed.p-20.bxs-default.bdc-asteroid.bdw-0.bds-solid.bdtw-1
+
+! 2020-08-23 https://www.scribd.com
+www.scribd.com##.auto__doc_page_app_page_body_fixed_viewport_bottom_components_recommender
+www.scribd.com##.fixed.auto__doc_page_body_toolbar > .left_tools > .download_btn_container
+www.scribd.com##.vertical_nav
+www.scribd.com##.read_free_button.wrapper__filled-button
+www.scribd.com##.auto__doc_page_webpack_doc_page_body_static_promo_study
+
+! 2020-08-24 https://www.scoopwhoop.com
+www.scoopwhoop.com###da-top
+www.scoopwhoop.com###rightSide
+
+! 2020-08-24 https://www.theverge.com
+www.theverge.com###rock-good-deals
+
+! 2020-08-24 https://thediplomat.com
+thediplomat.com###td-feature-bar_wrapper
+thediplomat.com###td-meta > .td-share
+thediplomat.com###td-head
+thediplomat.com###td-story-side
+thediplomat.com###td-foot
+thediplomat.com###td-story-bottom
+
+! 2020-08-25 https://pdfrock.com
+pdfrock.com###PDFROCKCOM_cookie_box
+
+! 2020-08-25 https://web.dev
+web.dev##web-snackbar-container
+
+! 2020-08-25 https://www.penguinrandomhouse.com
+www.penguinrandomhouse.com###survey_dialog
+www.penguinrandomhouse.com###flyin_bg
+
+! 2020-08-26 pinimg.com
+||i.pinimg.com/favicon.ico$image
+
+! 2020-08-26 https://source.chromium.org
+source.chromium.org##.ng-star-inserted.mat-snack-bar-center.ng-trigger-state.ng-trigger.ng-tns-c4-0.mat-snack-bar-container
+
+! 2020-08-26 https://www.thequint.com
+www.thequint.com###header
+www.thequint.com##.R7DyQ.story-head > ._1a6rt.social-share-links
+www.thequint.com##._2wUg_
+www.thequint.com##.story-element-text-also-read
+www.thequint.com##.nav-up
+www.thequint.com##div:nth-of-type(2) > .new-header-section > .links > .navbar-links > .right-group > .header-right-links-desktop.header-right-links > .plan-selection-header-button-wrapper-container > [href^="/plan-selection"]
+www.thequint.com##.js-story-container.liveblog-article > article.ctg-news.story-article:nth-of-type(1) > .story-article__hero
+||www.thequint.com/frontend-api/collections/infinite-scroll$domain=www.thequint.com
+||www.thequint.com/quintlab/support$subdocument
+
+! 2020-08-27 https://www.scientificamerican.com
+www.scientificamerican.com###footer
+www.scientificamerican.com##.sticky-header
+
+! 2020-08-27 https://www.news18.com
+www.news18.com##.resRightSide.section-blog-right
+www.news18.com##footer
+
+! 2020-08-27 https://news.avclub.com
+news.avclub.com##.js_header
+news.avclub.com##.cls-adapted-ad.ad-top-banner
+news.avclub.com##div.iYQxuq.sc-83o472-0:nth-of-type(2)
+news.avclub.com##.js_subscribe
+news.avclub.com##.js_footer-container
+news.avclub.com##.eTUqHn.sc-18b1b2r-5
+
+! 2020-08-28 https://www.audible.in
+www.audible.in##.bc-color-background-secondary.customer-notification-banner-type-IpRedirect.customer-notification-banner.bc-color-secondary.bc-box-padding-small
+
+! 2020-08-28 https://www.apple.com
+www.apple.com###ac-localeswitcher
+
+! 2020-08-28 https://www.buzzfeednews.com
+www.buzzfeednews.com###mod-site-component-thumbstrip-1
+www.buzzfeednews.com##body > header
+
+! 2020-08-29 https://web.dev
+web.dev##.w-hero-banner__inner
+
+! 2020-08-29 https://www.qwant.com
+www.qwant.com##footer
+
+! 2020-08-29 https://tech.hindustantimes.com
+tech.hindustantimes.com##.show.infiniteStoryScroll
+tech.hindustantimes.com##.footer
+
+! 2020-08-29 https://bangaloremirror.indiatimes.com
+bangaloremirror.indiatimes.com###minitv
+bangaloremirror.indiatimes.com##.right-content
+
+! 2020-08-29 https://www.newyorker.com
+www.newyorker.com##.stacked-navigation
+
+! 2020-08-29 tumblr.com
+tumblr.com##.open.tmblr-iframe--follow-teaser
+
+! 2020-08-29 https://ufile.io
+ufile.io##.modal-trigger.pro-download
+ufile.io##.bg--primary
+ufile.io##.bg--secondary.space--xs.text-center-xs.footer-3
+
+! 2020-08-30 https://theprint.in
+theprint.in##.tdc-header-wrap
+||d2c7ipcroan06u.cloudfront.net/wp-content/uploads/2020/08/badge_24aug.jpg$image
+theprint.in##.post_contribute
+
+! 2020-08-30 https://yandex.com
+yandex.com##.promo-popup__content.popup2__content
+
+! 2020-08-31 https://www.coinbase.com
+www.coinbase.com##.gkNzOD.sc-fzoLsD
+
+! 2020-08-31 https://gigaom.com
+gigaom.com##.has-ads.sidebar
+gigaom.com##.site-header
+gigaom.com##.cta-box
+
+! 2020-09-01 https://in.answers.yahoo.com
+answers.yahoo.com##.JoinAnswersBanner__joinAnswersBanner___1z4U1
+
+! 2020-09-01 https://startpage.com
+startpage.com##.extension-popup-home-container
+startpage.com##.widget-install-sp--.widget-install-sp
+
+! 2020-09-01 https://www.alexa.com
+www.alexa.com##.OrangeBanner
+
+! 2020-09-01 https://www.meritalk.com
+www.meritalk.com##.fancybox-overlay-fixed.fancybox-overlay
+
+! 2020-09-03 https://www.searchenginejournal.com
+www.searchenginejournal.com##.text-center.sej-sidebar.col-md-4
+
+! 2020-09-04 https://www.crunchbase.com
+www.crunchbase.com##.ng-star-inserted > .ng-star-inserted.mat-button-base.mat-raised-button.mat-focus-indicator
+
+! 2020-09-04 https://gaana.com
+gaana.com###popup
+gaana.com##.overlay
+gaana.com##.addFee_btn
+
+! 2020-09-04 https://www.educba.com
+www.educba.com##.shrink.fixed.site-header
+
+! 2020-09-07 https://securelist.com
+securelist.com###secondary > .widget-area
+
+! 2020-09-07 https://xkcd.com
+xkcd.com###bottom
+xkcd.com###topLeft
+xkcd.com##[src="//imgs.xkcd.com/static/nsuk2.jpg"]
+||imgs.xkcd.com/news/blm.png$image
+
+! 2020-09-07 https://www.financialexpress.com
+www.financialexpress.com##header
+www.financialexpress.com##.rightSidebar.rightcol
+www.financialexpress.com##footer
+
+! 2020-09-09 https://www.qwant.com
+www.qwant.com###c_21
+
+! 2020-09-09 https://about.me
+about.me##.ledge-content
+about.me##.topnav
+
+! 2020-09-09 https://www.fosshub.com
+www.fosshub.com##.ad
+
+! 2020-09-10 https://linkin.bio
+linkin.bio##.tLb--footerWrapper--xs.tLb--footerWrapper
+
+! 2020-09-10 https://sendgrid.com
+sendgrid.com##*.notice-cookies
+
+! 2020-09-10 https://www.getrevue.co
+www.getrevue.co###subscribe-bar
+
+! 2020-09-10 https://edition.cnn.com
+edition.cnn.com###cn-featured-41z7my
+edition.cnn.com##.carousel-medium-strip.carousel--fixed
+
+! 2020-09-14 https://indianexpress.com
+indianexpress.com###Popup
+indianexpress.com###sidebar1
+indianexpress.com##.navbar-fixed-top
+indianexpress.com##.m-marquee
+indianexpress.com##.hide_utm_paytm_phonepe
+indianexpress.com##div.amp-wp-content > .news-guard
+||indianexpress.com/wp-content/plugins/lazy-load/images/1x1.trans.gif$image
+
+! 2020-09-16 https://www.bitsatexam.in
+www.bitsatexam.in##.marqueestyle
+www.bitsatexam.in##.nav-primary
+
+! 2020-09-16 https://www.inmotionhosting.com
+inmotionhosting.com###cookies
+
+! 2020-09-17 https://fast.wistia.net
+fast.wistia.net##.w-css-reset.w-vulcan--background
+
+! 2020-09-18 https://www.howto-connect.com
+www.howto-connect.com##.lazyload.size-full
+
+! 2020-09-18 https://www.sarvgyan.com
+www.sarvgyan.com##.sgn-top-bar
+www.sarvgyan.com##.code-block
+
+! 2020-09-18 https://engineering.careers360.com
+engineering.careers360.com##.stickyDif.stickyBottom
+||careers360.com/adbuddy-embedded-form/$subdocument
+
+! 2020-09-18 https://www.similartech.com
+www.similartech.com##.notifier-with-buttons
+www.similartech.com##.notifier-theme-st.notifier-screen
+
+! 2020-09-19 https://www.outlookindia.com
+outlookindia.com##.sports_sticky
+outlookindia.com###btnSurvey
+outlookindia.com##.author_social > .story_share
+outlookindia.com##.wrapper_story_right
+
+! 2020-09-19 https://chromeunboxed.com
+chromeunboxed.com##.BuyButton
+
+! 2020-09-21 https://www.deepl.com
+deepl.com##.lmt_quotes
+deepl.com###lmt_quotes_article
+
+! 2020-09-22 https://screenrant.com
+screenrant.com##.tldr-btn-nc.tldr-btn-section
+screenrant.com###secondary
+
+! 2020-09-22 https://www.toppr.com
+toppr.com###signupPopupWrapper
+
+! 2020-09-23 https://www.vox.com
+vox.com##.l-header
+vox.com##.is-minimal.c-tab-bar
+
+! 2020-09-23 https://cinnamon.video
+cinnamon.video##.gvbzKN.Cookiesstyled__Wrapper-sc-1634b86-3
+
+! 2020-09-24 https://www.rd.com
+www.rd.com###right-sidebar-container
+www.rd.com##.non-contextual-video-wrapper.pure-g
+www.rd.com###ads-container-single
+
+! 2020-09-24 https://lmgtfy.app
+lmgtfy.app###lmgtfyblog
+
+! 2020-09-25 https://www.patreon.com
+www.patreon.com##.dpmXxa.sc-1rlb63q-0
+
+! 2020-09-25 https://www.surveymonkey.com
+www.surveymonkey.com##.footer--anon.footer
+
+! 2020-09-25 https://finance.yahoo.com
+||s.yimg.com/uc/fin/img/19/08/5a36c7b.png$image
+finance.yahoo.com##.Lh\(itemHeight_uhMagDesign\)\!.D\(tb\).Fl\(end\).Lh\(itemHeight\) > .H\(itemHeight_uhMagDesign\)\!.nr-applet-main-nav-right_Ov\(inh\)\!.Mstart\(-10px\).Pstart\(10px\).Ov\(h\).H\(navHeight\) > .Fl\(start\)
+
+! 2020-09-26 https://lbry.tv
+lbry.tv##.nag
+
+! 2020-09-27 https://www.udemy.com
+www.udemy.com##.alert-banner--alert-banner-information--1fccT
+
+! 2020-09-28 https://www.thetimes.co.uk
+www.thetimes.co.uk###paywall-portal-page-footer
+
+! 2020-10-03 https://www.jiosaavn.com
+www.jiosaavn.com##.banner.home > .c-toast
+www.jiosaavn.com##.active.c-banner
+www.jiosaavn.com##.c-toast__msg
+
+! 2020-10-06 https://www.udemy.com
+www.udemy.com##.ud-component--footer--eu-cookie-message
+www.udemy.com##.advertising-banner--container--2nUhw
+
+! 2020-10-06 https://techurls.com
+techurls.com##.publisher-is-inquisitr
+techurls.com##.publisher-is-techradar
+techurls.com##.publisher-is-buzzfeednews
+techurls.com##.publisher-is-techmeme
+techurls.com##.publisher-is-digg
+techurls.com##.publisher-is-slashdot
+techurls.com##.publisher-is-readwrite
+techurls.com##.publisher-is-makeuseof
+techurls.com##.publisher-is-cnet
+techurls.com##.publisher-is-time
+
+! 2020-10-06 https://devurls.com
+devurls.com##.publisher-is-fbcode
+devurls.com##.publisher-is-dzone
+
+! 2020-10-07 https://news.abplive.com
+news.abplive.com##.swiper-slide-active
+
+! 2020-10-07 https://www.mobilemarketingreads.com
+www.mobilemarketingreads.com###cookie-law-info-bar
+
+! 2020-10-07 https://www.nbcnews.com
+www.nbcnews.com###AmpSidebar
+www.nbcnews.com###nor > .vvb.gew
+www.nbcnews.com##.dmo-print.nxd.lxx.zxa.ero.lrm__amp-social-share--wrapper.zna.mgx
+www.nbcnews.com###exo > .do
+
+! 2020-10-08 https://imgur.com
+
+! 2020-10-08 https://www.shiksha.com
+www.shiksha.com##.half-width.embed:has(:has-text(/predict/i))
+www.shiksha.com##.brchr_35298.tupleBrochureButton.button--orange.button.rippleefect.ctpBro-btn.ctp-btn
+www.shiksha.com##button.rippleefect.ctpBro-btn.ctp-btn
+
+! 2020-10-08 https://www.google.com
+www.google.com##.chr-cookie-banner-v3__inner
+
+! 2020-10-09 https://www.welcometothejungle.com
+www.welcometothejungle.com##.gEdEhv.sc-1u7oiza-0
+
+! 2020-10-09 https://lumendatabase.org
+lumendatabase.org##.first-time-visitor
+
+! 2020-10-09 https://www.shiksha.com
+www.shiksha.com##.ctp_sidebar
+
+! 2020-10-09 https://www.collegesearch.in
+www.collegesearch.in###featured_colleges
+www.collegesearch.in##.featured_container
+www.collegesearch.in##.trackCTA.select_update.raise-2
+www.collegesearch.in##div.text-center.footer
+www.collegesearch.in##.footer-links-new.hidden-xs.content
+www.collegesearch.in##[href="https://bit.ly/klu_ug_banner"] > .hover_bright.img-responsive
+www.collegesearch.in##.gaurante_res.row
+www.collegesearch.in##div#banner.clgWrapper
+www.collegesearch.in##div.featuredExam.row
+
+! 2020-10-09 https://engineering.careers360.com
+engineering.careers360.com##.sectionLayout.text-center.app-block
+engineering.careers360.com##.sectionLayout.sec-testimonials
+engineering.careers360.com##.commonFooter
+engineering.careers360.com##.right-sidebar.sidebarPart
+
+! 2020-10-09 https://www.getmyuni.com
+www.getmyuni.com##.in.padding_zero.college-counseling-modal
+www.getmyuni.com##.b-right-card-flex
+www.getmyuni.com##.footer_section
+
+! 2020-10-09 https://collegedunia.com
+collegedunia.com##.feedback-banner
+collegedunia.com##.lead_buttons
+collegedunia.com###js-leadform-main
+collegedunia.com##.ajax_responsive_modal_leadform
+
+! 2020-10-09 https://www.welcometothejungle.com
+www.welcometothejungle.com##.iKFArG.bt96d2-0 > section
+
+! 2020-10-15 https://www.news18.com
+www.news18.com###sidebar1
+www.news18.com##.ad-container
+
+! 2020-10-15 https://edusson.com
+edusson.com##.wprtsp_pop
+edusson.com###sidebar
+edusson.com##footer
+edusson.com##.wof-wheels
+edusson.com##.eds_advantages
+edusson.com##.eds_solution_block
+edusson.com##.wof-overlay
+edusson.com##.wof-visible.wof-theme-alt-green.wof-wheel
+edusson.com##.current.step
+
+! 2020-10-15 https://papersowl.com
+papersowl.com##.js_footer-wrapper.footer-wrapper
+papersowl.com##.js_no-select-styler.bottom_order_form
+papersowl.com##.header_in
+papersowl.com##div.blog-help-banner_v2.blog-help-banner
+
+! 2020-10-15 https://kahoot.com
+kahoot.com##.footer-banner--fixed
+kahoot.com##.page-footer
+
+! 2020-10-15 https://blog.dropbox.com
+blog.dropbox.com##.aem-Grid--default--12.aem-Grid--12.aem-Grid > .aem-GridColumn--default--12.aem-GridColumn.u10-subscribe-overlay
+www.dropbox.com##.persistent-footer-container
+@@||cfl.dropboxstatic.com/static/js/modules/clean/paper/template_library/metadata/social_media_plan.min-vflk_K9Na.js$script,domain=dropbox.com
+dropbox.com##.file-viewer-modal-overlay.mc-modal-overlay.ReactModal__Overlay--after-open.ReactModal__Overlay
+dropbox.com##.preview-toolbar-container
+
+! 2020-10-17 https://usersnap.com
+usersnap.com##.us-navbar--scrolled.us-navbar
+usersnap.com##.widget_follow_widget
+
+! 2020-10-17 https://www.pressgazette.co.uk
+www.pressgazette.co.uk##.site-header
+www.pressgazette.co.uk##.article-sidebar-column
+www.pressgazette.co.uk##.article-left
+www.pressgazette.co.uk##.share-buttons
+www.pressgazette.co.uk###comments-132228
+
+! 2020-10-18 https://www.runnaroo.com
+runnaroo.com###promoted
+
+! 2020-10-20 https://www.crunchbase.com
+crunchbase.com##native-magic > .ng-star-inserted > section-card > .mat-elevation-z3.mat-focus-indicator.mat-card
+crunchbase.com##.layout-align-space-between.layout-column.page-layout-body > .ng-star-inserted
+crunchbase.com##.ng-star-inserted.crm-buttons
+
+! 2020-10-20 https://metro.co.uk
+metro.co.uk##.share-bar-with-dropdown
+metro.co.uk###page-container > .clearfix
+metro.co.uk##.widget.just-in-container.trending-sidebar
+
+! 2020-10-20 https://www.espncricinfo.com
+www.espncricinfo.com##.site-header
+www.espncricinfo.com##.sticky-top
+www.espncricinfo.com##.col-xl-4.col-lg-6
+
+! 2020-10-23 https://www.dailymail.co.uk
+www.dailymail.co.uk##.article-id-8301471.article-reader-comments
+www.dailymail.co.uk##.and-footer
+www.dailymail.co.uk##.page-footer
+www.dailymail.co.uk##.footer
+www.dailymail.co.uk##.alpha > .news.item
+www.dailymail.co.uk##.bdrcc.rotator
+
+! 2020-10-23 https://www.pdf2go.com
+www.pdf2go.com##.fadeInDown.animated.alert-warning.alert.col-sm-4.col-xs-11
+
+! 2020-10-25 https://blog.google
+blog.google##.cookie-show
+
+! 2020-10-26 https://www.symbolab.com
+www.symbolab.com##.nl-cookiepolicy
+www.symbolab.com##.print-hide.nl-redText.nl-feedback
+www.symbolab.com##.externalLink
+
+! 2020-10-26 https://www.vedantu.com
+www.vedantu.com##.header-container
+
+! 2020-10-26 kissanime.ru.net
+||kissanime.ru.net/wp-content/plugins/deblocker/*$1p
+
+! 2020-10-26 https://www.indiatimes.com
+www.indiatimes.com##.float-button
+www.indiatimes.com##.text-center.text-white.footer
+
+! 2020-10-28 https://www.wsj.com
+www.wsj.com##.login-section-container
+www.wsj.com##footer
+
+! 2020-10-28 https://www.msn.com
+www.msn.com###irisbannerph
+
+! 2020-10-29 https://www.ft.com
+www.ft.com##.o-header__drawer
+www.ft.com##.n-layout__row--footer.n-layout__row
+
+! 2020-10-30 https://www.britannica.com
+www.britannica.com##.marketing-slider.marketing-SLIDER
+
+! 2020-10-31 https://www.collegepravesh.com
+www.collegepravesh.com###sidebar
+||img.collegepravesh.com/files/ex-assets/BennettDS_200200.jpg$image
+www.collegepravesh.com##.mtsnb-fixed.mtsnb-top.mtsnb-shown.mtsnb
+
+! 2020-11-01 robloxscripts.net
+||robloxscripts.net/wp-content/plugins/dh-anti-adblocker/*$1p
+
+! 2020-11-03 https://arstechnica.com
+arstechnica.com##.ad_wrapper
+
+! 2020-11-08 https://zapier.com
+zapier.com##.try-zapier-cta--not-top
+
+! 2020-11-09 https://blog.feedspot.com
+blog.feedspot.com##.overlay
+
+! 2020-11-14 https://modernconsensus.com
+modernconsensus.com##.sgcboxOverlayBg.sg-popup-overlay-1.sg-popup-overlay.colorbox6
+
+! 2020-11-16 https://www.searchenginewatch.com
+www.searchenginewatch.com##.in.fade.modal-backdrop
+www.searchenginewatch.com##.bottom.fixed
+www.searchenginewatch.com##.single-post__sidebar
+
+! 2020-11-18 https://www.jaypore.com
+www.jaypore.com##.new_emailerLikePage.main-wrapper
+
+! 2020-11-19 https://www.thedrive.com
+www.thedrive.com##.footer__border
+www.thedrive.com##.page-header
+
+! 2020-11-19 https://owasp.org
+owasp.org###disclaimer-container
+
+! 2020-11-23 https://www.analog.com
+www.analog.com##.in.fade.modal
+
+! 2020-11-23 https://mythirdbrain.substack.com
+substack.com###nojs-banner
+
+! 2020-11-28 https://regexr.com
+regexr.com##.noad
+
+! 2020-11-30 https://thenextweb.com
+thenextweb.com##.u-m-1_5.post-actions--top.post-actions
+
+! 2020-12-08 https://brainly.in
+brainly.in##.js-register-toplayer.sg-overlay
+
+! 2020-12-09 https://m.hindustantimes.com
+m.hindustantimes.com###amp-menu
+m.hindustantimes.com##.myheader
+m.hindustantimes.com##amp-carousel
+m.hindustantimes.com##.nextstory
+m.hindustantimes.com##.fl100.india
+m.hindustantimes.com##amp-next-page
+
+! 2020-12-10 https://theweek.com
+theweek.com##.hide-for-small-only.speedreads-left-rail
+
+! 2020-12-14 https://vimeo.com
+vimeo.com##.gdbU4._3-ypV
+
+! 2020-12-15 https://genius.com
+genius.com##.dtwVTD.StickyNav__Container-sc-1q5ye4s-0
+
+! 2020-12-16 https://danielmiessler.com
+danielmiessler.com###dm-newsletter-popup
+
+! 2020-12-22 https://scontent-lax3-1.xx.fbcdn.net
+||fbcdn.net/favicon.ico$image,1p
+
+! 2020-12-22 https://gitee.com
+gitee.com##.pendan-widget.gitee-stars-main-widget
+
+! 2020-12-25 https://www.themoscowtimes.com
+www.themoscowtimes.com##.contribute-bar--show
+
+! 2020-12-26 https://www.tennessean.com
+www.tennessean.com##.gnt_pm
+www.tennessean.com##.gnt_em__el.gnt_em_vp__tavp.gnt_em
+
+! 2021-01-04 https://yourstory.com
+yourstory.com##.jVJeea.sc-etRtft.sc-EHOje
+
+! 2021-01-04 https://www.mykhel.com
+www.mykhel.com##header
+www.mykhel.com##.os-rt.os-sports-m-news-r
+www.mykhel.com###widget_live_footer_block
+www.mykhel.com##.os-rt.os-sports-article-rt
+www.mykhel.com##.deepLinkPromo
+www.mykhel.com##footer
+www.mykhel.com##.slider-article-list-wrap
+
+! 2021-01-05 https://plaintextoffenders.com
+plaintextoffenders.com##.open.tmblr-iframe--follow-teaser
+
+! 2021-01-09 https://deadline.com
+deadline.com##.pmc-u-background-white.a-stack-2.a-stacking-context
+deadline.com##.a-space-children--2.a-space-children-vertical.pmc-a-grid-item.article-sidebar
+deadline.com##.pmc-u-padding-tb-1.pmc-u-color-white.pmc-u-background-black
+deadline.com##.pmc-u-padding-b-2.pmc-u-background-white.a-wrapper
+deadline.com##.pmc-u-padding-a-1.pmc-u-color-black.pmc-u-background-white.u-flex-direction-column\@mobile-max.u-flex.u-align-items-center.a-wrapper
+deadline.com##.u-flex.a-sticky\@desktop-xl.a-article-grid__social
+deadline.com##.pmc-u-padding-l-1.pmc-u-margin-b-2.pmc-u-margin-t-2.pmc-u-margin-l-2.u-border-color-brand-red.u-border-l-8.related-story
+
+! 2021-01-11 https://amp.cnn.com
+amp.cnn.com##.nav-menu
+
+! 2021-01-12 https://victorzhou.com
+victorzhou.com##.SubscribePopup-module--container--2HE4e
+
+! 2021-01-17 https://www.metrolyrics.com
+www.metrolyrics.com##.print
+www.metrolyrics.com##.js-col1.col
+www.metrolyrics.com##.page-header
+www.metrolyrics.com##.mid-song-wrap
+www.metrolyrics.com##*.driver-related
+www.metrolyrics.com##footer
+www.metrolyrics.com##.video-container-inline
+
+! 2021-01-17 https://www.reverbnation.com
+www.reverbnation.com###foundation_page_header
+www.reverbnation.com##.background-cover-wrap
+www.reverbnation.com##.pl4-for-medium-up.pr4-for-medium-up.pt4.row
+www.reverbnation.com###foundation_page_footer
+
+! 2021-01-20 https://newrepublic.com
+newrepublic.com##.HomePageNavFull_container.soldShortVerticalNav.HomePageNav_container
+
+! 2021-03-29 https://www.integral-calculator.com
+||www.integral-calculator.com/images/brave-en.png$image
+
+! 2021-04-02 https://www.derivative-calculator.net
+||www.derivative-calculator.net/images/brave-en.png$image
+www.derivative-calculator.net##.support-me
+
+! 2021-04-02 https://www.integral-calculator.com
+www.integral-calculator.com##.support-me
+
+! 2021-04-11 https://superuser.com
+superuser.com##.js-consent-banner
+
+! 2021-04-14 https://www.coindesk.com
+www.coindesk.com##.long-form.has-media.article-body > .newsletter-module-wrapper
+www.coindesk.com##.desktop.site-nav
+www.coindesk.com##.visible.article-progress-bar
+
+! 2021-04-16 https://www.reuters.com
+www.reuters.com##.ArticleHeader__share___3GFHTV
+www.reuters.com##.OldSiteBanner__banner___id1Yv3
+www.reuters.com##.RegularArticleLayout__header___A8_rVJ > header
+www.reuters.com##footer
+www.reuters.com##.RegularArticleLayout__related___2MCEjD
+www.reuters.com##.RegularArticleLayout__right-rail___zLRRRC
+www.reuters.com##.StatefulImage__image___zY1d5b
+
+!https://www.twitter.com
+twitter.com##div[aria-label="Timeline: Trending now"]
+twitter.com##.r-usiww2.r-1777fci.r-18u37iz.css-1dbjc4n
+#prevent scroll bar being hidden by loggin popup
+
+twitter.com##html:style(overflow-y: scroll !important; overscroll-behavior-y: none !important;)
+
+! 2021-04-21 https://www.twitch.tv
+www.twitch.tv###twilight-sticky-footer-root
+
+! 2021-04-27 https://www.freightwaves.com
+www.freightwaves.com##.mobile-header-centered
+www.freightwaves.com##.container.widget-area
+www.freightwaves.com##.is-sticky.normal-side
+www.freightwaves.com##.dark-widgetized-area.dark-skin.site-footer
+www.freightwaves.com##.comments-area
+www.freightwaves.com##.post-components
+
+! 2021-05-14 https://web.whatsapp.com
+web.whatsapp.com##._3UUj0
+
+! 2021-06-06 https://news.abplive.com
+news.abplive.com##.page-header-new
+news.abplive.com##.clearfix.related_story
+news.abplive.com##.newfooter
+news.abplive.com##.uk-box-shadow-small
+news.abplive.com##._sticky_bottom_class
+news.abplive.com##.uk-position-relative.footer
+
+! 2021-06-08 https://www.dispatch.com
+www.dispatch.com##.gnt_em_vp__tavp.gnt_em
+www.dispatch.com##.gnt_rr
+www.dispatch.com##.gnt_ft
+www.dispatch.com##.gnt_tbb.gnt_tb
+www.dispatch.com##.gnt_cw_sl__ed.gnt_cw_sl
+www.dispatch.com##div.gnt_ss
+www.dispatch.com##aside.gnt_x__al.gnt_x__lbl.gnt_x.gnt_m
+www.dispatch.com##.gnt_x__hi.gnt_x__lbl.gnt_x.gnt_m
+www.dispatch.com##.gnt_n
+
+! 2021-06-13 https://www.androidauthority.com
+www.androidauthority.com##.ijkrfK.sc-1aq13fn-32
+www.androidauthority.com##.post-sidebar
+www.androidauthority.com##.kTWCIu.hkf41r-0
+www.androidauthority.com##.eVfIOs.sc-1aq13fn-0
+
+! 2021-06-13 https://dictionary.cambridge.org
+dictionary.cambridge.org##.lmt-10.lt2s.hfr-s
+
+! 2021-06-14 https://www.si.com
+www.si.com##.is-below-header-ad.m-balloon-header
+www.si.com##.mm-footer--has-publisher-logo.m-footer
+www.si.com##.mm-component-stack--has-footer.mm-component-stack--has-header.mm-component-stack--is-stacked.is-inverted.m-component-stack.m-tile-hub
+www.si.com##.mm-sodo-component--universaltopnav.m-sodo-component
+
+! 2021-06-15 https://stackoverflow.com
+stackoverflow.com##.js-consent-banner
+stackoverflow.com###sidebar
+! increases width of stackoverflow codeblock div to 150%. hide sidebar before doing this
+stackoverflow.com##.s-code-block:style(width: 150% !important)
+
+! 2021-06-17 https://www.thedrum.com
+www.thedrum.com##.all_nav
+www.thedrum.com##.ctf-2021__banner
+www.thedrum.com##aside
+www.thedrum.com##.signup-cta__fixed
+www.thedrum.com##.bg-line--turquoise.js-ga_event_click
+www.thedrum.com##footer
+www.thedrum.com##.nocontent
+www.thedrum.com##.signup-cta
+
+
+! 2021-06-19 https://www.cnbctv18.com
+www.cnbctv18.com##.breadcrumb-wrap
+www.cnbctv18.com##.rightbar
+www.cnbctv18.com##.leftbar
+www.cnbctv18.com##.social.jsx-1908659124
+www.cnbctv18.com##.market-tracker.jsx-3509751795
+www.cnbctv18.com##.head-parent-wrap.jsx-9513901
+www.cnbctv18.com##.advertisement
+www.cnbctv18.com##.consumpion-id
+
+! 2021-06-20 https://jsfiddle.net
+jsfiddle.net###s-bottom:has(:has-text(/ads via carbon/i))
+
+! 2021-06-20 https://asia.nikkei.com
+asia.nikkei.com##.header
+
+! 2021-06-25 https://downdetector.com
+downdetector.com###_evidon-barrier-wrapper
+
+! 2021-06-28 https://www.britannica.com
+www.britannica.com##.open.border-right-sm-5
+www.britannica.com##.col-da-300
+www.britannica.com##.marketing-content
+www.britannica.com###header
+www.britannica.com##.my-25.justify-content-center
+
+! 2021-06-30 https://www.cbsnews.com
+www.cbsnews.com##.super-nav
+www.cbsnews.com##.lazyload.nocontent.site-header
+www.cbsnews.com##.site-footer
+
+! 2021-07-01 https://thewire.in
+thewire.in##.intercom-namespace
+thewire.in##.razorpay-subscription-button
+
+! 2021-07-02 https://www.newshub.co.nz
+www.newshub.co.nz##.GlobalFooter
+
+! 2021-07-14 https://www.theregister.com
+www.theregister.com###nav-sidebar1
+www.theregister.com##.headerbar
+www.theregister.com###footer
+
+! 2021-07-31 https://www.the-sun.com
+www.the-sun.com##.theme-main.sun-container > .theme-lifestyle
+www.the-sun.com##footer
+www.the-sun.com##.article-sidebar
+
+! 2021-07-31 https://timesofindia.indiatimes.com
+timesofindia.indiatimes.com##.footer_wrapper
+timesofindia.indiatimes.com##._1CGr1._2A5Sk
+timesofindia.indiatimes.com##.cmtwrapper
+timesofindia.indiatimes.com##.zB_L9
+timesofindia.indiatimes.com##.innerbody._15wZO > .vX3bQ
+timesofindia.indiatimes.com##.nextASwidget._2zb3b
+timesofindia.indiatimes.com##._1iPQX
+timesofindia.indiatimes.com##.PnJsj
+timesofindia.indiatimes.com##.header-container
+
+! 2021-07-31 https://www.windowscentral.com
+www.windowscentral.com##.article-shop-bar
+
+! 2021-08-03 https://www.bostonglobe.com
+www.bostonglobe.com##.incognito-paywall--visible
+www.bostonglobe.com##.foreground
+www.bostonglobe.com##.slide.relative.padding_horizontal_16.desktop-4
+
+
+! 2021-08-14 https://www.manchestereveningnews.co.uk
+www.manchestereveningnews.co.uk##.publication-theme-highlight.primary
+www.manchestereveningnews.co.uk##.secondary.related-column
+www.manchestereveningnews.co.uk##.section-theme-border.top-stories
+www.manchestereveningnews.co.uk##.article-body > section
+www.manchestereveningnews.co.uk##footer
+www.manchestereveningnews.co.uk##.publication-theme.pancake
+
+! 2021-08-16 https://babylonbee.com
+babylonbee.com###app > .row > .col-12
+babylonbee.com##.col-md-4
+babylonbee.com##.navbar-laravel
+babylonbee.com###app > .container
+babylonbee.com##footer
+babylonbee.com##.col-md-8 > .mt-4
+
+! 2021-08-17 https://www.thesun.co.uk
+www.thesun.co.uk##.theme-main.sun-container > .theme-football
+www.thesun.co.uk##.article-sidebar
+www.thesun.co.uk##footer
+
+! 2021-08-17 https://www.express.co.uk
+www.express.co.uk##.superbanner
+www.express.co.uk##.right-column
+www.express.co.uk##.footballteamswidget
+www.express.co.uk###maincontainer > header.clearfix
+www.express.co.uk##.size.clearfix.mainFooter
+www.express.co.uk##.affiliate-widget
+www.express.co.uk##.right.box
+www.express.co.uk##.left.box
+www.express.co.uk##.two-related-articles.box
+
+! 2021-08-17 https://inews.co.uk
+inews.co.uk##.inews__header
+inews.co.uk##.row.inews__sidebar
+inews.co.uk##.inews__main > .color-context.jsx-4147724359
+inews.co.uk##.inews__footer
+
+! 2021-08-17 https://www.manutd.com
+www.manutd.com##.home-content-panel__details > .home-content-panel__details-social__main-holder
+
+! 2021-08-17 https://hackerone.com
+hackerone.com##.topbar-signed-out__wrapper
+
+! 2021-08-18 https://scroll.in
+scroll.in##.hideOnApp.clearfix.global-navigation
+scroll.in##.scrollstrap-container
+
+! 2021-08-18 https://www.uefa.com
+www.uefa.com###onetrust-consent-sdk
+www.uefa.com##.d3-plugin.navbar-lv2 > .club-selector.d3-react
+
+! 2021-08-20 https://www.avclub.com
+www.avclub.com##.js_topbar
+www.avclub.com##.js_header
+www.avclub.com##.js_comments-iframe
+
+! 2021-08-22 https://www.pcgamer.com
+www.pcgamer.com##.trending-wrapper
+www.pcgamer.com###sidebar
+www.pcgamer.com##.affiliateDisclaimerBar
+www.pcgamer.com###document-footer
+www.pcgamer.com###comment-jump
+
+! 2021-08-22 https://open.spotify.com
+open.spotify.com##.gqeP9Y0_y6DLm4CD_m3Q
+
+! 2021-08-25 https://finance.yahoo.com
+finance.yahoo.com###Header
+
+! 2021-08-27 https://www.skysports.com
+www.skysports.com##.sdc-site-localnav--football
+www.skysports.com##.blackjack-sdc-digrev-header
+www.skysports.com###no-js-nav
+www.skysports.com##.site-footer
+www.skysports.com##.around-sky-wrap
+
+! 2021-08-27 https://www.liverpoolecho.co.uk
+www.liverpoolecho.co.uk##.mod-header
+www.liverpoolecho.co.uk##.secondary.related-column
+www.liverpoolecho.co.uk##footer
+www.liverpoolecho.co.uk##.section-theme-border.tab-triggers
+
+! 2021-08-27 https://www.standard.co.uk
+www.standard.co.uk##.foVcnR.sc-qXhiz
+www.standard.co.uk##.izKVhe.sc-pHKzq
+www.standard.co.uk##.cfKYSy.sc-fznNvL
+
+! 2021-08-27 https://www.joe.co.uk
+www.joe.co.uk##.article-sidebar.col-lg-4.col-sm-12
+www.joe.co.uk##.header
+www.joe.co.uk##.hidden-xs.hidden-sm.skin-wrapper
+www.joe.co.uk##.also-like-container.row
+
+! 2021-08-27 https://www.football.london
+www.football.london##.mod-header
+
+! 2021-08-27 https://www.mirror.co.uk
+www.mirror.co.uk##.max-content.footer
+www.mirror.co.uk##header.max-content
+
+! 2021-08-27 https://www.macworld.com
+www.macworld.com##.site-header
+www.macworld.com##.primaryFooter
+
+! 2021-08-28 https://nypost.com
+nypost.com##.site-header
+
+
+! 2021-08-30 https://www.fedscoop.com
+www.fedscoop.com##.header
+www.fedscoop.com##.homeslim
+www.fedscoop.com##.related-news
+www.fedscoop.com##.ad-slot--billboard--article--wrapper
+www.fedscoop.com##.in-this-story
+
+! 2021-08-31 https://www.algolia.com
+www.algolia.com##.md\:ai-center.md\:d-flex.md\:m-20.md\:bdr-max.md\:w-500.bgc-white.right-0.bot-0.left-0.z-max.pos-fixed.p-20.bxs-default.bdc-grey-100.bdw-0.bds-solid.bdtw-1:has(:has-text(/agree to our use of cookies/i))
+
+! 2021-09-04 https://gizmodo.com
+gizmodo.com##.js_header
+gizmodo.com##.durKSP.sc-235a11-0
+
+! 2021-09-05 https://deadspin.com
+deadspin.com##.js_header
+deadspin.com##.js_sticky-top-ad
+deadspin.com##.eTaWyD.sc-235a11-0
+deadspin.com##.js_topbar
+deadspin.com###sidebar_wrapper
+deadspin.com##.fpPzXA.ynugv2-2
+deadspin.com##.js_link
+
+! 2021-09-05 https://onezero.medium.com
+onezero.medium.com##.at.s.rb.as
+
+! 2021-09-05 https://cs.android.com
+cs.android.com##.ng-star-inserted.mat-snack-bar-center.ng-trigger-state.ng-trigger.ng-tns-c4-0.mat-snack-bar-container
+
+! 2021-09-06 https://www.telegraphindia.com
+www.telegraphindia.com##.ttdheader
+www.telegraphindia.com##.pt-2.uk-grid-divider.row > .col-4
+www.telegraphindia.com##.uk-grid-divider-footer
+www.telegraphindia.com##.pb-4.pt-4.container.text-white.clearfix
+www.telegraphindia.com###footer
+
+! 2021-09-06 https://www.wired.com
+www.wired.com##.should-hold-space
+www.wired.com##.ldTjCp.BasePageSiteFooterRow-edYIrm
+www.wired.com##.grid-layout__aside.grid--item
+www.wired.com##.grid-full-bleed.grid-items-2.grid-margins.grid
+
+! 2021-09-06 https://www.sportbible.com
+www.sportbible.com##.css-1v521fz
+www.sportbible.com##.css-1y9cdns
+www.sportbible.com##.css-1a6l3kw
+www.sportbible.com##.header--shallow
+www.sportbible.com###FooterContainer
+www.sportbible.com##.css-gmv41o
+
+! 2021-09-06 https://cointelegraph.com
+cointelegraph.com##.layout__header
+cointelegraph.com##.sidebar
+cointelegraph.com##.post__content-shares
+cointelegraph.com##.posts-listing__more-wrp
+
+! 2021-09-08 https://www.ocregister.com
+www.ocregister.com##.swappable.article-sidebar
+www.ocregister.com##.headroom--top.default.site-header
+www.ocregister.com##.site-footer
+www.ocregister.com##.more-news
+www.ocregister.com##.article-footer
+www.ocregister.com##.dfm-trust-indicators-footer-links
+
+! 2021-09-10 https://www.fantasyfootballscout.co.uk
+www.fantasyfootballscout.co.uk###header
+www.fantasyfootballscout.co.uk##.entry-meta
+www.fantasyfootballscout.co.uk##.hc-container
+www.fantasyfootballscout.co.uk###footer
+
+! 2021-09-10 https://fantasyfootball247.co.uk
+fantasyfootball247.co.uk###gp-mobile-nav
+fantasyfootball247.co.uk###gp-main-header
+fantasyfootball247.co.uk###gp-small-header
+fantasyfootball247.co.uk###gp-footer
+fantasyfootball247.co.uk###footer-image
+
+! 2021-09-11 https://www.geeksforgeeks.org
+www.geeksforgeeks.org##.login-modal-div
+
+! 2021-09-15 https://www.mid-day.com
+www.mid-day.com##.footer-main
+www.mid-day.com##.border-bottom.main-navbar
+
+! 2021-09-15 https://www.planetfootball.com
+www.planetfootball.com##.single-article__social
+www.planetfootball.com##[href="https://www.planetfootball.com/quick-reads/"]
+
+! 2021-09-19 https://www.thenationalnews.com
+www.thenationalnews.com##.page-header
+www.thenationalnews.com##.col-lg-xl-3.col-sm-md-12
+www.thenationalnews.com##footer
+www.thenationalnews.com##.tags-holder
+www.thenationalnews.com##.wrap-bottom.layout-section.col-sm-xl-12
+
+! 2021-09-19 https://qz.com
+qz.com##._8HA6c.fHAS6.aOCxk > div
+
+! 2021-09-20 https://variety.com
+variety.com##.lrv-u-position-relative.u-z-index-middle.js-Header.\/\/.header
+variety.com##.lrv-u-text-transform-uppercase.lrv-u-color-white.u-border-color-brand-secondary-30.u-border-b-1.lrv-u-border-t-1.u-background-color-brand-accent-100-b.a-hidden\@mobile-max.\/\/.main-menu
+variety.com##.author-social__share
+variety.com##.u-background-color-accent-b
+variety.com##.lrv-u-margin-tb-1.lrv-a-wrapper.\/\/.newswire__wrapper
+variety.com##.lrv-u-flex-direction-column
+variety.com##.lrv-u-color-brand-primary.lrv-u-line-height-large.u-letter-spacing-012.lrv-u-font-family-primary.a-children-icon-bullet.\/\/.article-tags
+
+! 2021-09-20 https://news.careers360.com
+news.careers360.com###footer
+
+! 2021-09-24 https://www.hitbullseye.com
+www.hitbullseye.com###background
+
+! 2021-09-24 https://www.uefa.com
+www.uefa.com###onetrust-consent-sdk
+www.uefa.com##.favourite_club
+
+! 2021-09-25 https://cdpn.io
+cdpn.io##.referer-warning
+
+! 2021-10-03 https://www.oregonlive.com
+www.oregonlive.com###fusion-app > .toprail
+www.oregonlive.com##.sidebar
+www.oregonlive.com##.sharebar
+www.oregonlive.com##.footer
+
+! 2021-10-05 https://www.medianama.com
+www.medianama.com###myModal
+
+! 2021-10-06 https://www.google.com
+www.google.com##.SfSHIf:has(:has-text(/dark theme/i))
+
+! 2021-10-08 https://www.bloomberg.com
+www.bloomberg.com###fortress-preblocked-container-root
+
+! 2021-10-11 https://www.indianhealthyrecipes.com
+www.indianhealthyrecipes.com##.widget-area.sidebar-primary
+www.indianhealthyrecipes.com##.site-header
+
+! 2021-10-17 https://www.the-goalpost.com
+www.the-goalpost.com###SITE_HEADER_WRAPPER
+www.the-goalpost.com###Containerqtgdc > div > div > ._3d64y
+www.the-goalpost.com###SITE_HEADER-placeholder
+www.the-goalpost.com###SITE_FOOTER_WRAPPER
+
+! 2021-10-20 https://www.youtube.com
+www.youtube.com##.ytp-ce-size-1280
+
+! 2021-11-01 https://www.marca.com
+www.marca.com##.futbol.js-cnav-header.marca-en.inside-news.inside.main-header
+www.marca.com##.seo-links-container.js_slider_container
+www.marca.com##.js_socialMedia
+www.marca.com##.horizontal.site-footer
+
+! 2021-11-02 https://www.desmoinesregister.com
+www.desmoinesregister.com##.gnt_rr
+www.desmoinesregister.com##.gnt_em_vp__tavp.gnt_em
+www.desmoinesregister.com##.gnt_n
+www.desmoinesregister.com##.gnt_xbr
+www.desmoinesregister.com##.gnt_ft
+
+! 2021-11-08 https://english.mathrubhumi.com
+english.mathrubhumi.com##.mbiMainMenu
+english.mathrubhumi.com##.article-right-div
+english.mathrubhumi.com##.audtxt-wrapper
+english.mathrubhumi.com##.footerEl
+english.mathrubhumi.com##.mat_copyright
+english.mathrubhumi.com##.socialicons_more_btm
+english.mathrubhumi.com##.print_share_div.hidden-print.leftcon
+
+! 2021-11-11 https://owasp.org
+owasp.org###popup
+
+! 2021-11-13 https://dotesports.com
+dotesports.com##.site-header
+dotesports.com###top-heroboard
+dotesports.com##div.proper-ad-unit
+dotesports.com##.site-footer
+
+! 2021-11-14 https://chrome.google.com
+chrome.google.com##.yD5gtd
+
+! 2021-11-17 https://dictionary.cambridge.org
+dictionary.cambridge.org##.lpb-1.lpt-1.fs15.x
+
+! 2021-11-20 https://cryptonews.com
+cryptonews.com##.col-lg-3.offset-lg-1.col-12
+cryptonews.com##.footer
+cryptonews.com##.text-lg-right.article-tag-box
+
+! 2021-11-23 https://www.transfermarkt.co.in
+www.transfermarkt.co.in###sp_message_container_575813
+
+! 2021-11-30 https://www.foxnews.com
+www.foxnews.com##.site-footer
+www.foxnews.com##[href^="https://foxnews.onelink.me/"]
+www.foxnews.com##.desktop.sidebar-primary
+
+! 2021-11-30 https://www.sport.es
+www.sport.es##.sp-authorbox > .social
+www.sport.es##.header-section.header
+www.sport.es##body > div.hidden-xs.hidden-sm.container > .add
+www.sport.es##.footer
+
+! 2021-12-01 https://flutter.dev
+flutter.dev##.show.cookie-snack
+
+! 2021-12-01 https://www.protocol.com
+www.protocol.com##.css-listicle-body-2655761143.js-listicle-body.clearfix.js-expandable.body
+
+! 2021-12-03 https://www.fxempire.com
+www.fxempire.com##.flRWhv.fJBtUE
+
+! 2021-12-06 https://www.theblockcrypto.com
+www.theblockcrypto.com##.globalNav
+www.theblockcrypto.com##.rightRailWell
+www.theblockcrypto.com##.d-print-none
+www.theblockcrypto.com##.font-body.globalFooter
+
+! 2021-12-06 https://www.cnbc.com
+www.cnbc.com##.CNBCGlobalNav-container
+www.cnbc.com##.PageBuilder-sidebar
+www.cnbc.com##.WatchLiveRightRail-container
+
+! 2021-12-07 https://www.business-standard.com
+www.business-standard.com###footer
+www.business-standard.com###header-content
+www.business-standard.com##.social-shar-bar
+www.business-standard.com###article-comment-frame
+www.business-standard.com##.related-keyword
+www.business-standard.com###moreOnMarkets
+
+! 2021-12-09 https://docs.staruml.io
+docs.staruml.io###animatedComponent > .r-lrvibr.r-1i6wzkk.r-1otgn73.r-1loqt21.css-1dbjc4n
+
+! 2021-12-12 https://studio.youtube.com
+||studio.youtube.com^$domain=studio.youtube.com
+
+! 2021-12-14 https://www.livemint.com
+www.livemint.com###rhsPopularVideosNotAdFree
+www.livemint.com##.rightBlock
+www.livemint.com##.leftSec
+
+! 2021-12-15 https://apnews.com
+apnews.com##.Header
+apnews.com##.header-placeholder
+
+! 2021-12-26 https://www.tmz.com
+www.tmz.com##.header-wrapper
+www.tmz.com##.jumbotron-top
+www.tmz.com##.footer
+www.tmz.com##.curator-blogroll-widget-permalink
+www.tmz.com##.related-articles
+www.tmz.com##.sidebar
+
+! 2021-12-26 https://news.artnet.com
+news.artnet.com##.sidebar-container
+news.artnet.com###header
+news.artnet.com##.hidden-xs
+news.artnet.com##.footer-wrapper
+
+! 2021-12-26 https://www.seattletimes.com
+www.seattletimes.com##.standard.global-header
+
+! 2021-12-28 https://www.fox4news.com
+www.fox4news.com##.nav-closed.site-header
+www.fox4news.com##.site-footer
+www.fox4news.com##.collection-river.collection
+
+! 2021-12-28 https://www.app.com
+www.app.com##.gnt_n
+www.app.com##.gnt_rr
+www.app.com##.gnt_ft
+www.app.com##.gnt_xbr
+www.app.com##.gnt_cw_sl__ed.gnt_cw_sl
+www.app.com##a.gnt_cw_sl
+www.app.com##.gnt_em_vp_db_svg
+
+! 2021-12-28 https://www.cincinnati.com
+www.cincinnati.com##.gnt_n
+www.cincinnati.com##.gnt_rr
+www.cincinnati.com##.gnt_ft
+www.cincinnati.com##.gnt_xbr
+www.cincinnati.com##.gnt_cw_sl__ed.gnt_cw_sl
+www.cincinnati.com##a.gnt_cw_sl
+www.cincinnati.com##.gnt_em_vp_db_svg
+
+! 2021-12-30 https://www.cincinnati.com
+www.cincinnati.com##.gnt_em_vp__tavp
+
+! 2021-12-30 https://www.prokerala.com
+www.prokerala.com##.shadow.top-stories-articles-float
+www.prokerala.com##.header
+www.prokerala.com##.footer
+
+! 2022-01-01 https://www.ranker.com
+www.ranker.com##.Brands_header__CFWPZ
+www.ranker.com###__next > div.container_container__1FDQv
+www.ranker.com##.title_tagsAndShareWrapper__Sc2uw
+
+! 2022-01-06 https://soccer.nbcsports.com
+soccer.nbcsports.com##.site-footer
+soccer.nbcsports.com##.site-header
+soccer.nbcsports.com###nbcsports-scoreboard
+soccer.nbcsports.com###article-nav
+
+! 2022-01-06 https://www.pinterest.com
+www.pinterest.com##.Hsu.iyn.zI7.qJc.p6V.ojN.jzS.gjz.fte.fev.dxm._he.PKX.Lej.LCN.Jea
+
+! 2022-01-08 https://www.wftv.com
+www.wftv.com##.page-header
+www.wftv.com##.wrap-bottom.layout-section.ie-flex-100-percent-sm.right-article-section
+www.wftv.com##.ts-share-bar
+
+! 2022-01-09 https://www.agriculture.com
+www.agriculture.com##.karma-sticky-rail
+www.agriculture.com##.pane-1.pane-custom.panel-pane
+www.agriculture.com##.related-content-primary
+www.agriculture.com##.site-footer
+www.agriculture.com##.exclude-auto-history
+www.agriculture.com##.site-header
+
+! 2022-01-10 https://www.statista.com
+www.statista.com###onetrust-consent-sdk
+
+! 2022-01-10 https://www.dailydot.com
+www.dailydot.com###browsi-topunit
+www.dailydot.com###main-header
+www.dailydot.com##.sticky-header-gap
+
+! 2022-01-10 https://wegotthiscovered.com
+wegotthiscovered.com##.sticky.header
+wegotthiscovered.com##.push
+wegotthiscovered.com##.sidebar
+wegotthiscovered.com##.footer
+
+! 2022-01-11 https://gitbook.io
+gitbook.io###animatedComponent > .r-lrvibr.r-1i6wzkk.r-1otgn73.r-1loqt21.css-1dbjc4n
+
+! 2022-01-17 https://www.manchestereveningnews.co.uk
+www.manchestereveningnews.co.uk##.tag-list
+
+! 2022-01-21 https://abcnews.go.com
+abcnews.go.com##.navigation
+abcnews.go.com##.Article__Column--sidebar
+abcnews.go.com##.Article__Footer--news
+abcnews.go.com##.footer
+
+! 2022-01-23 https://www.youtube.com
+www.youtube.com##ytd-shelf-renderer.ytd-item-section-renderer.style-scope:has(:has-text(/people also watched/i))
+
+! 2022-02-02 https://www.arsenal.com
+www.arsenal.com###onetrust-consent-sdk
+
+! 2022-02-02 https://interestingengineering.com
+interestingengineering.com###cookie-warning
+interestingengineering.com##.navbar-fixed-top
+interestingengineering.com###page-content > .container-fluid
+interestingengineering.com##.slim-subscription
+interestingengineering.com##.clearfix.recommended-wrapper
+
+! 2022-02-05 https://open.spotify.com
+open.spotify.com##.dz_h98rH9nZCwfPdnKgr
+
+! 2022-02-05 https://theprint.in
+theprint.in##.td-header-template-wrap
+
+! 2022-02-05 https://sourcegraph.com
+||sourcegraph.com/.api/graphql?LogEvents$xhr,1p
+||sourcegraph.com/.api/graphql?LogUserEvent$xhr,1p
+
+! 2022-02-06 https://indianexpress.com
+indianexpress.com###fixednavbar
+indianexpress.com##.rhs-banner-carousel
+indianexpress.com##.event-track-class
+
+! 2022-02-06 https://viewsb.com
+viewsb.com##.jw-reset.jw-hide.jw-logo-top-right
+
+! 2022-02-07 https://fingerprintjs.com
+||fingerprintjs.com^$script
+
+! 2022-02-07 https://www.corrieredellosport.it
+www.corrieredellosport.it##.AdUnit_cds__2s_51
+www.corrieredellosport.it##.HeaderInternal_header__1LFgK
+
+! 2022-02-07 https://www.indeed.com
+www.indeed.com##.google-Only-Modal
+www.indeed.com###fullstory-banner
+
+! 2022-02-08 https://www.cnbc.com
+www.cnbc.com##.FeaturedStories-styles-makeit-container--3YRSC
+www.cnbc.com##.MakeItGlobalNav-styles-makeit-container--tVhxO
+www.cnbc.com##.MakeItFooter-styles-makeit-container--2PYrX
+
+! 2022-02-09 https://www.lbc.co.uk
+www.lbc.co.uk##.header
+www.lbc.co.uk##.seemore
+www.lbc.co.uk##.footer
+www.lbc.co.uk##.remixd-audio-player-wrapper
+
+! 2022-02-09 https://www.techradar.com
+www.techradar.com##.primary-nav
+www.techradar.com##.dfp-leaderboard-container
+www.techradar.com##.affiliateDisclaimerBar
+www.techradar.com##.trending-wrapper
+www.techradar.com###document-footer
+www.techradar.com##.related-articles-block
+www.techradar.com##.read-more-container
+www.techradar.com###taboola-below-article-thumbnails
+www.techradar.com##.full.block-link
+www.techradar.com###sidebar
+www.techradar.com###desktop-in-article
+
+! 2022-02-09 https://www.kuow.org
+www.kuow.org##.sidebar_wrapper
+
+! 2022-02-12 https://www.dailystar.co.uk
+www.dailystar.co.uk##.mod-header
+
+
+! 2022-02-13 https://www.mirror.co.uk
+www.mirror.co.uk###sidebar
+www.mirror.co.uk##header
+www.mirror.co.uk###email-display-trigger
+www.mirror.co.uk##footer
+www.mirror.co.uk##.social-follow-comment-bar
+www.mirror.co.uk##.more-on
+
+! 2022-02-14 https://www.nytimes.com
+@@||www.nytimes.com^$script,domain=www.nytimes.com/games/wordle/index.html
+
+! 2022-02-16 https://www.londonworld.com
+www.londonworld.com###header
+
+! 2022-02-16 https://www.dailymail.co.uk
+www.dailymail.co.uk##.money.related-partners
+www.dailymail.co.uk##.article-reader-comments
+www.dailymail.co.uk###fiveDealsWidget
+www.dailymail.co.uk##div#most-watched-videos-lazy-container
+
+! 2022-02-20 https://www.thetimes.co.uk
+www.thetimes.co.uk##.css-1dbjc4n.knGNET.responsive-sc-15gvuj2-0
+www.thetimes.co.uk##.GlobalNav
+
+! 2022-03-02 https://rusi.org
+rusi.org##.Header-module--component--Q4eV9
+
+! 2022-03-06 https://kamilkazani2.substack.com
+substack.com##td > .custom.alternative-meta.post-meta
+substack.com##.publication-footer
+substack.com##.animated.main-menu
+
+! 2022-03-06 https://clutchpoints.com
+clutchpoints.com##.relative.mvp-post-content-out > .relative
+clutchpoints.com###mvp-top-head-wrap
+
+! 2022-03-29 https://www.geeksforgeeks.org
+||api.geeksforgeeks.org/js/loginModal-1.3.js$script,1p
+
+! 2022-03-31 https://byjus.com
+byjus.com##.bcFloat
+byjus.com###bt_invite_box
+
+! 2022-04-02 https://www.palatinate.org.uk
+www.palatinate.org.uk##.donation-active
+
+! 2022-04-21 https://smallseotools.com
+smallseotools.com##.text-center.fuc_
+
+! 2022-04-26 https://www.economist.com
+www.economist.com##.article-audio-player
+
+! 2022-04-26 https://www.bloomberg.com
+||bbgvod-azure-us-east1-zenko.global.ssl.fastly.net^$xhr,domain=bloomberg.com
+
+! 2022-04-26 https://news.yahoo.com
+news.yahoo.com##.aside-section
+news.yahoo.com###Header
+news.yahoo.com###Footer
+news.yahoo.com##.close-button-wrapper
+
+! 2022-04-27 https://www.innovationaus.com
+www.innovationaus.com##.style_white.header-center.site-header
+
+! 2022-06-01 https://cryptoslate.com
+cryptoslate.com###cs-newsletter
+
+! 2022-07-07 https://www.coindesk.com
+www.coindesk.com##.sticky-header
+www.coindesk.com##.cnfQcl.disclaimerstyles__StyledWrapper-sc-7v0lzn-0
+
+! 2022-07-14 https://www.youtube.com
+www.youtube.com###contentWrapper > .ytd-popup-container.style-scope:has(:has-text(/signed out of youtube/i))
+
+! 2022-07-27 https://nypost.com
+nypost.com##.layout__item--sidebar.layout__item
+nypost.com##.site-footer
