@@ -1,0 +1,41 @@
+---
+name: Merge and update myfilters.txt
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: check-if-local-filters.txt-exists
+        id: check-local-filters
+        run: |
+          if ls | grep -Fq "local-filters.txt"
+          then
+              echo "::set-output name=local_filters_exists::true"
+          else
+              echo "::set-output name=local_filters_exists::false"
+              echo "local-filters.txt does not exist"
+          fi
+      - name: Setup python
+        if: steps.check-local-filters.outputs.local_filters_exists == 'true'  
+        uses: actions/setup-python@v4
+      - name: Move and merge changes from local-filters.txt to my-filters.txtyy
+        id: update-changes
+        if: steps.check-local-filters.outputs.local_filters_exists == 'true'
+        run: python merge.py
+      - name: Commit changes
+        id: commit-changes
+        if: steps.check-local-filters.outputs.local_filters_exists == 'true'
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add my-filters.txt
+          git commit -m "Updating my-filters.txt"
+...
