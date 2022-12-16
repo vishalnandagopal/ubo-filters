@@ -39,8 +39,7 @@ jobs:
           git add my-filters.txt
           git commit -m "Updating my-filters.txt"
       - name: Push changes to remote
-        id: push changes
+        id: push-changes
         if: steps.check-local-filters.outputs.local_filters_exists == 'true'
-        run: |
-          git push
+        run: git push
 ...
