@@ -1,14 +1,18 @@
 [Adblock Plus 2.0]
 ! Title: Vishal's personal uBO filter list
-! Last modified: Fri Mar  3 13:56:12 IST 2023
+! Last modified: Fri Mar  3 06:31:41 2023 + UTC
 ! Expires: 7 days (update frequency)
 !
 ! Please report only issues or problems specifically with this filter list via GitHub issues or via e-mail (ubo-filters@vishalnandagopal.com). If you see ads not being blocked, report it on EasyList forums - https://forums.lanik.us/ .
 !
 ! Homepage: https://github.com/vishalnandagopal/ubo-filters
-! Licence: https://github.com/vishalnandagopal/ubo-filters/blob/main/LICENSE! GitHub issues: https://github.com/vishalnandagopal/ubo-filters/issues
+! Licence: https://github.com/vishalnandagopal/ubo-filters/blob/main/LICENSE
+! GitHub issues: https://github.com/vishalnandagopal/ubo-filters/issues
 ! GitHub pull requests: https://github.com/vishalnandagopal/ubo-filters/pulls
+
+
 ! ----------------------------- FILTER LIST BEGINS -----------------------------
+
 
 !	FOR WEBSITES BLOCKING SCROLL BAR      example.com##body,html:style(overflow: auto !important;)
 
@@ -2567,4 +2571,5 @@ www.geeksforgeeks.org###openInApp-modal
 
 
 
------------------------------ FILTER LIST ENDS -----------------------------
+
+! ----------------------------- FILTER LIST ENDS -----------------------------
