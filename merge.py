@@ -32,3 +32,4 @@ with open("my-filters.txt", "w+") as f:
     # with open("temp-local-backup.txt", "w+") as g:
     #     g.write(temp)
     f.write(boilerplate + content + lastline)
+    print("Merged")
