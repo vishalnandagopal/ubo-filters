@@ -22,6 +22,7 @@ if ls | grep -Fq "local-filters.txt"; then
     echo "$boilerplate" > my-filters.txt
     cat local-filters.txt >> my-filters.txt
     echo "$lastline" >> my-filters.txt
+    echo "Merged"
 else
     echo 'local-filters.txt not found'
 fi
