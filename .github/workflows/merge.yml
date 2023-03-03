@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
       - name: Run script
         id: run-script
-        run: sh merge.sh
+        run: bash merge.sh
       - name: Commit changes
         id: commit-changes
         if: steps.check-local-filters.outputs.local_filters_exists == 'true'
