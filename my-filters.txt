@@ -1,18 +1,14 @@
 [Adblock Plus 2.0]
 ! Title: Vishal's personal uBO filter list
-! Last modified: Fri Dec 16 23:36:03 2022 + UTC
+! Last modified: Fri Mar  3 13:56:12 IST 2023
 ! Expires: 7 days (update frequency)
 !
 ! Please report only issues or problems specifically with this filter list via GitHub issues or via e-mail (ubo-filters@vishalnandagopal.com). If you see ads not being blocked, report it on EasyList forums - https://forums.lanik.us/ .
 !
 ! Homepage: https://github.com/vishalnandagopal/ubo-filters
-! Licence: https://github.com/vishalnandagopal/ubo-filters/blob/main/LICENSE
-! GitHub issues: https://github.com/vishalnandagopal/ubo-filters/issues
+! Licence: https://github.com/vishalnandagopal/ubo-filters/blob/main/LICENSE! GitHub issues: https://github.com/vishalnandagopal/ubo-filters/issues
 ! GitHub pull requests: https://github.com/vishalnandagopal/ubo-filters/pulls
-
-
 ! ----------------------------- FILTER LIST BEGINS -----------------------------
-
 
 !	FOR WEBSITES BLOCKING SCROLL BAR      example.com##body,html:style(overflow: auto !important;)
 
@@ -2555,6 +2551,20 @@ www.youtube.com###contentWrapper > .ytd-popup-container.style-scope:has(:has-tex
 nypost.com##.layout__item--sidebar.layout__item
 nypost.com##.site-footer
 
+! 2022-12-20 https://www.technologyreview.com
+www.technologyreview.com##.tp-modal
+www.technologyreview.com##.tp-active.tp-backdrop
+www.technologyreview.com##.headerTemplate__isPinned--1BvDC.headerTemplate__container--dark--30EQl
+
+! 2022-12-28 https://www.scmagazine.com
+www.scmagazine.com##.swal2-backdrop-show.swal2-center.swal2-container
+
+! 2022-12-31 https://finshots.in
+finshots.in###subs-popup-banner
+
+! 2023-01-28 https://www.geeksforgeeks.org
+www.geeksforgeeks.org###openInApp-modal
 
 
-! ----------------------------- FILTER LIST ENDS -----------------------------
+
+----------------------------- FILTER LIST ENDS -----------------------------
