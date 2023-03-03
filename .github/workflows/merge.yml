@@ -18,7 +18,6 @@ jobs:
         run: bash merge.sh
       - name: Commit changes
         id: commit-changes
-        if: steps.check-local-filters.outputs.local_filters_exists == 'true'
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
